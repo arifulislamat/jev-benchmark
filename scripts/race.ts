@@ -48,13 +48,31 @@ const post = (url: string, body: unknown) =>
   });
 
 // ---------------------------------------------------------------- Jev
+// The request bodies live here so the copy shown on the site is the same object
+// that went over the wire. They drifted once: the page advertised max_tokens 200
+// long after the lane had moved to 1500.
+const jevBody = (t: Ticket) => ({
+  model: CONTESTANTS[0].model,
+  state: { subject: t.subject, body: t.body },
+  questions: QUESTIONS,
+});
+
+// 200 was too tight: a reasoning model spent its whole budget thinking and
+// returned a truncated sentence, which then failed to parse. That was my cap,
+// not the model. Low effort is uniform across every lane and judge, because
+// triage does not need deep reasoning and the token bill should stay honest.
+const llmBody = (t: Ticket, model: string) => ({
+  model,
+  max_tokens: 1500,
+  reasoning: { effort: "low" },
+  messages: [{ role: "user", content: llmPrompt(t) }],
+  response_format: { type: "json_schema", json_schema: { name: "triage", strict: true, schema: LLM_SCHEMA } },
+  usage: { include: true },
+});
+
 async function runJev(t: Ticket): Promise<Result> {
   const started = performance.now();
-  const res = await post("https://openrouter.ai/api/alpha/decisions", {
-    model: CONTESTANTS[0].model,
-    state: { subject: t.subject, body: t.body },
-    questions: QUESTIONS,
-  });
+  const res = await post("https://openrouter.ai/api/alpha/decisions", jevBody(t));
   const json = await res.json();
   const ms = performance.now() - started;
   if (res.status === 402 || res.status === 403) throw new Error(`jev: ${json?.error?.message ?? res.statusText}`);
@@ -90,18 +108,7 @@ async function runJev(t: Ticket): Promise<Result> {
 // ---------------------------------------------------------------- text models
 async function runLlm(t: Ticket, model: string, attempt = 0): Promise<Result> {
   const started = performance.now();
-  const res = await post("https://openrouter.ai/api/v1/chat/completions", {
-    model,
-    // 200 was too tight: a reasoning model spent its whole budget thinking and
-    // returned a truncated sentence, which then failed to parse. That was my cap,
-    // not the model. Low effort is uniform across every lane and judge, because
-    // triage does not need deep reasoning and the token bill should stay honest.
-    max_tokens: 1500,
-    reasoning: { effort: "low" },
-    messages: [{ role: "user", content: llmPrompt(t) }],
-    response_format: { type: "json_schema", json_schema: { name: "triage", strict: true, schema: LLM_SCHEMA } },
-    usage: { include: true },
-  });
+  const res = await post("https://openrouter.ai/api/v1/chat/completions", llmBody(t, model));
   const json = await res.json();
   const ms = performance.now() - started;
 
@@ -267,15 +274,7 @@ const run = {
   generated_at: new Date().toISOString(),
   dataset: { n: tickets.length, questions: Object.keys(QUESTIONS).length },
   questions: QUESTIONS,
-  requests: {
-    jev: { model: CONTESTANTS[0].model, state: { subject: sample.subject, body: sample.body }, questions: QUESTIONS },
-    llm: {
-      model: CONTESTANTS[1].model,
-      max_tokens: 200,
-      messages: [{ role: "user", content: llmPrompt(sample) }],
-      response_format: { type: "json_schema", json_schema: { name: "triage", strict: true, schema: LLM_SCHEMA } },
-    },
-  },
+  requests: { jev: jevBody(sample), llm: llmBody(sample, CONTESTANTS[1].model) },
   concurrency: CONCURRENCY,
   consensus_coverage,
   agreement,

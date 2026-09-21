@@ -8,6 +8,17 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cumulative, type Run } from "@/lib/run";
 
+const REPO = "https://github.com/arifulislamat/jev-benchmark";
+
+// Lucide dropped brand icons, so the GitHub mark is inlined.
+function GithubMark() {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true" className="size-5" fill="currentColor">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+    </svg>
+  );
+}
+
 const money = (n: number) => (n < 0.01 ? `$${n.toFixed(4)}` : `$${n.toFixed(2)}`);
 const pct = (n: number) => `${(n * 100).toFixed(1)}%`;
 const secs = (ms: number) => `${(ms / 1000).toFixed(1)}s`;
@@ -63,6 +74,20 @@ export default function App() {
   return (
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-4xl px-4 py-10 md:py-16">
+        <div className="mb-6 flex justify-end">
+          <a
+            href={REPO}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Source on GitHub"
+            title="Source on GitHub"
+            className="inline-flex items-center gap-2 rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <GithubMark />
+            <span className="hidden sm:inline">source</span>
+          </a>
+        </div>
+
         <header className="mb-8">
           <h1 className="text-balance text-4xl font-semibold tracking-tight md:text-5xl">
             One returns text you have to parse. The other returns a decision.
@@ -176,6 +201,18 @@ export default function App() {
             <Method run={run} />
           </TabsContent>
         </Tabs>
+
+        <footer className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
+          Powered by{" "}
+          <a
+            href="https://www.brillmark.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-foreground underline underline-offset-4 hover:no-underline"
+          >
+            BrillMark LLC
+          </a>
+        </footer>
       </div>
     </div>
   );

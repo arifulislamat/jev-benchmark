@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 0,
+    "subject": "2FA not working after enabling it on our account",
+    "body": "We enabled two-factor authentication last week for our 12 seats and now half our team can't log in at all, they're getting an error that says 'authentication code invalid' even when they use the correct code from Google Authenticator, but if we disable 2FA everyone can get back in fine. This is broken since it's supposed to work according to your docs, so we'd like a credit on our invoice for the past week since people couldn't actually use the product properly. Can you either fix this or let us know what's going on.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 1,
+    "subject": "Custom fields disappearing from task view after sync with Jira",
+    "body": "We have 12 seats and yesterday afternoon after the Jira integration sync our custom fields that we mapped (Priority Level, Cost Center, Client ID) stopped appearing in the task detail panel even though they're still showing up in the raw data when I export to CSV, but our team can't actually see them when working on tasks which is breaking our workflow since we need those fields to assign work. It was working fine before the sync and I've already tried logging out and clearing cache but the fields just won't render. Can you look into why the custom field display broke after that integration?",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 2,
+    "subject": "Slack integration not syncing task updates",
+    "body": "Hi, we've had the Slack integration connected for a couple weeks now and it was working fine at first but starting yesterday afternoon the task updates stopped showing up in our #projects channel. We're on the 15-seat plan and I've checked that the integration is still authorized in our workspace settings, the channel permissions look right, and tasks are definitely being updated in the app itself - they're just not making it to Slack anymore. Can you take a look at what might be going on on your end? Let me know if you need any logs or screenshots.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 3,
+    "subject": "Question about our monthly subscription charges",
+    "body": "Hi, I've been reviewing our invoices for the last few months and I noticed our bill keeps going up even though we're not adding new seats. We've had the same 12 people on the account since January but last month jumped to $612 and this month is $637, both on the 1st. Can someone explain whats happening with our recurring charges, I want to make sure we're not being double-billed or something. Thanks.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 4,
+    "subject": "BROKEN custom fields - losing data AGAIN and need credit on our account",
+    "body": "This is ridiculous, we've been paying $49/seat for 8 months now and the custom fields feature keeps corrupting our project data. We set up custom dropdown fields last week and half our tasks lost the values we entered, then when we tried to recreate them the fields just disappeared entirely from the board view even though they show up in settings. This is costing us real money because our team has to manually re-enter everything and we're way behind schedule. We want a credit applied to our next invoice for at least the last month since your product clearly isn't working as you documented it would. This should have been tested before release.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 5,
+    "subject": "need to add 3 more seats before end of day - slack integration sync issue eating into our trial",
+    "body": "Hi we're on day 8 of our 14 day trial and just realized our slack integration isn't syncing task updates properly which means our team has been missing critical project deadlines, we need to upgrade to 8 seats immediately to get the premium slack features and I need to know if we can do this today since we're deciding between your tool and monday.com by tomorrow morning, also if we upgrade now do we get prorated pricing for the rest of this month or do we pay full price",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 6,
+    "subject": "we need more seats urgently - sprint reports showing we're over capacity",
+    "body": "Hi, we just ran our sprint report and realized we have 47 active users but only 40 seats allocated, so some of our devs can't even access their tasks mid-sprint and we're losing time trying to work around this. Can you tell me how much it would cost to upgrade to 60 seats and if we can do it today so people can get back to work? This is killing our velocity on a client project. Our current invoice is from last month under order #TW-89234.",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 7,
+    "subject": "Webhook not firing for invoice.payment_failed events",
+    "body": "Hi, we've got 15 seats on the annual plan and our accounting system relies on the webhook to catch failed payment notifications so we can flag accounts internally, but we're not receiving any of the invoice.payment_failed events even though we know payments are failing on our end. Can you check if webhooks are actually being sent for billing events or if there's something we need to configure differently on our account?",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 8,
+    "subject": "Search function broken - affecting billing audit",
+    "body": "Hi, we're trying to search through our invoice history to reconcile charges from last quarter but the search feature in the Billing section keeps returning no results even when we search for specific invoice numbers that we know exist. This is making it impossible to verify if we're being charged correctly for our 23 seats, we have multiple invoices dating back 6 months that should show up but they're completely invisible in the system right now. Can someone look into this immediately because we need to close our books today and I can't proceed without seeing these records.",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 9,
+    "subject": "Search not returning results for tasks with specific custom field values",
+    "body": "Hi, we've noticed that when we try to search for tasks using our custom \"Project Phase\" field in the search bar, it's not returning any results even though we know those tasks exist and have that field populated. The search works fine for task names and descriptions but seems to break specifically when filtering by custom fields. We have 12 seats on the Professional plan and this is blocking our team's workflow for at least half our daily searches. Can you take a look at whether this is a known issue or if there's something misconfigured on our end?",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 10,
+    "subject": "2FA codes not working - users locked out of workspace since 8am",
+    "body": "We have 12 seats on the enterprise plan and our entire team has been unable to log in since this morning because the two-factor authentication is rejecting valid codes from Google Authenticator, we're losing about $200/hour in productivity and this is completely blocking our work. The 2FA requirement was already enforced on our workspace so now nobody can get in, we've tried re-adding authenticators and generating new codes but nothing works. We need this fixed immediately and expect a credit for today's downtime, our invoice is INV-447829 for reference.",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 11,
+    "subject": "Jira sync charges keep showing up but we're not using it anymore",
+    "body": "Hi, we have 12 seats on your platform and we turned off the Jira integration last month but we're still being charged $588 for the sync add-on on our last invoice. Our team needs this resolved today because we can't process our expenses report until we understand what's actually on our bill and stop being charged for features we disabled, can you either remove this charge or tell me if we need to do something different to actually deactivate it.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 12,
+    "subject": "question about upgrading to see gantt charts",
+    "body": "hi, we're currently on the starter plan with 8 seats and one of our project managers mentioned that gantt view is only available on the professional tier. can you send me a quote for upgrading our whole account to professional so I can see what that would cost monthly, also do we need to upgrade all 8 seats or can we do like 3-4 seats on professional and keep the rest on starter",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 13,
+    "subject": "Need to add custom fields but hit some kind of limit??",
+    "body": "We just signed up for the Professional plan last month and were told we'd get unlimited custom fields but now when I try to add more than 15 fields to our project template it won't let me, we have 8 seats active right now and literally cannot run our intake process without at least 30 fields this is completely blocking us from using the tool for our client work today, is this a bug or do we need to upgrade to Enterprise or something because your pricing page isn't clear on this at all",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 14,
+    "subject": "Why am I being charged for 50 seats when we only have 12 people??",
+    "body": "This is ridiculous - we got our invoice today and you're charging us for 50 seats but we literally only have 12 employees using this, I checked the admin panel and it clearly shows 12 active users so why are you billing us for the extra 38 seats every single month, we cant work on our projects because I'm spending all my time dealing with billing issues instead of actually using your platform, this needs to be fixed immediately because our CFO is losing his mind over these charges, how do I fix this automatic billing so we only pay for what we're actually using?",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 15,
+    "subject": "annual renewal invoice charged twice - system error",
+    "body": "We got hit with TWO charges for our annual renewal yesterday, one for $5,880 (120 seats) and then another identical charge a few hours later, both went through on our payment method and now our accounting is completely confused. I know this is a billing thing but this is clearly a system glitch on your end - the renewal page must have double-processed our order or something. We need to figure out what happened here because we're not paying twice for the same year obviously.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 16,
+    "subject": "Need to add 3 more seats urgently - Jira sync is critical for our workflow",
+    "body": "Hi, we've got 5 seats right now but our dev team just expanded and we need 8 total to get everyone synced up with Jira. We're trying to push a release today and right now half the team can't see project updates in real time because we're out of seats, it's blocking our whole sprint. Can you let me know the pricing for upgrading to 8 seats and if there's a pro-rata adjustment to our current invoice since we're mid-cycle, we need this set up in the next couple hours ideally.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 17,
+    "subject": "need to remove a contractor from our workspace",
+    "body": "Hi, one of our contractors finished their project last week and I need to get them off our account since we're paying per seat. They still have access to everything and I'm not sure if we're still being charged for their spot - can you walk me through how to remove them or just do it for us? Their account name is john.dev@contractormail.com and they were added back in February. Thanks",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 18,
+    "subject": "question about audit log feature in our plan",
+    "body": "Hi, we're looking at moving our company over to your platform and I wanted to confirm which plan includes the full audit log with 90-day retention before we commit to 15 seats. We've got some compliance requirements around activity tracking so this feature is pretty important for our decision, can you let me know which tier has this and if it changes the pricing per user? Our current vendor charges extra for audit logs so I want to make sure I'm getting the right quote.",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 19,
+    "subject": "Charged twice for March billing cycle - need this reversed immediately",
+    "body": "We were billed $1,470 on March 1st for our 30 seats but then got charged again on March 15th for the exact same amount, our accounting team just caught it during month-end close and we need the duplicate charge reversed ASAP since it's throwing off our books. Looking at invoice #INV-89234 and #INV-89401, both are dated within two weeks of each other for the same period and same seat count. Can you process a credit back to our card on file for the second charge, this is holding up our reconciliation.",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 20,
+    "subject": "Why am I being charged for 15 seats when we only use 5??",
+    "body": "We switched to your platform 2 months ago and set up the Slack integration so our whole team gets notifications, but I just realized we're being billed for 15 active seats when literally only 5 people use this tool daily. The integration keeps auto-adding people to the seat count and I have no idea how to remove them without breaking everything. Our invoice is coming up and I'm losing my mind trying to figure out if we need to downgrade our plan or if this is a billing bug on your end. We're hemorrhaging money on unused seats and I need to know right now if we can adjust this before the next billing cycle hits.",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 21,
+    "subject": "Recurring charges not stopping after cancellation",
+    "body": "We cancelled our subscription on Nov 15th but our credit card was still charged on Dec 1st for all 12 seats, and we're getting charged again today for the third time. According to your documentation the recurring billing should stop immediately upon cancellation. This is blocking us from being able to process our own billing reconciliation and our finance team can't close out November. Can you stop these charges and tell me what's happening with our billing integration?",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 22,
+    "subject": "Stop sending me billing emails to old domain",
+    "body": "Hi, we switched email providers last month and my old domain is being forwarded but I'm getting duplicate invoice notifications to both addresses now. Can you update the email on our billing contact so I just get one copy? We have 12 seats on the annual plan.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 23,
+    "subject": "Calendar sync not working - recurring tasks not showing up on Google Calendar since yesterday morning",
+    "body": "Hi, we've had our team synced to Google Calendar for the past 6 months and it's been working fine but as of yesterday around 10am none of our recurring tasks are showing up anymore on anyone's calendar even though they're clearly in the app. One-off tasks sync fine which is weird. We have 12 seats on the annual plan and this is breaking our workflow pretty bad, we'd like a credit applied to our account for at least this month while we figure out if we need to switch tools, we can't really operate like this. Can you look into what happened with the Google integration?",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 24,
+    "subject": "Why am I being charged for 15 seats when we only use 5???",
+    "body": "This is absolutely ridiculous, we've had the same 5 person team for months now but our invoice keeps showing we're paying for 15 seats, I don't know if this is a system error or what but nobody from your support has explained why our bill keeps going up every month when nothing has changed on our end. We're not even using those extra licenses. Can someone PLEASE look into our account and tell me what's going on with our subscription because this makes no sense.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 25,
+    "subject": "Search function completely broken - cant find any tasks",
+    "body": "We've been trying to search for tasks all morning and nothing is working, the search bar just returns blank results every time even though we know the tasks exist. I've tried searching by task name, by assignee, by project - literally nothing works and we're dead in the water right now because our team can't locate anything. We have 12 seats on the Premium plan and this is making it impossible for us to do our jobs today. This worked fine yesterday so something broke on your end.",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 26,
+    "subject": "Overcharged for seats in March billing cycle",
+    "body": "Hi, we got charged for 15 seats on March 1st but we only had 12 active users that month, I removed 3 seats on March 5th after realizing the overage. Can you credit back the difference for those 3 unused seats? Our invoice shows $735 but it should be around $588. Thanks.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 27,
+    "subject": "Gantt chart not syncing with task updates - need credit for lost time",
+    "body": "We've been having an issue where changes made to task dates in the list view aren't showing up in the Gantt chart until we refresh the entire page, sometimes multiple times. This has been happening for 3 days now and our project managers are constantly having to go back and forth to verify timelines which is pretty frustrating. We're a 12-seat customer and honestly we'd like some credit applied to our next invoice since this is costing us time and the Gantt view is pretty much half of why we pay for the pro plan. Can you look into what's causing the sync issue?",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 28,
+    "subject": "Need to restrict custom fields access for certain roles immediately",
+    "body": "Hi, we just realized that all our contributors can see and edit custom fields we set up for executive reporting only, including salary bands and confidential project codes. We have 23 seats and this is a serious data security issue for us. Can you walk me through how to configure field-level permissions by role or if this isn't possible in our current setup we need to know asap since we're running a board meeting tomorrow morning where these dashboards will be shared.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 29,
+    "subject": "Annual renewal went through but we're locked out of the workspace",
+    "body": "Hi, our annual plan renewed this morning for 25 seats but now when our team tries to log in we're getting permission errors on everything, nobody can access projects or docs. The renewal confirmation says it went through and we're being charged but the workspace shows we have 0 active users. This is blocking our entire sprint planning for today. Invoice #INV-2024-8847 if that helps, can someone check our account permissions immediately?",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 30,
+    "subject": "Question about custom field limits on our current plan",
+    "body": "Hi, we're on the Professional plan with 12 seats at $49/seat and I wanted to check if there are additional charges if we need more than the standard custom fields included. We've got about 8 custom fields already but our product team keeps asking for more and I want to make sure we're not going to hit some kind of overage fee or if we need to upgrade to Enterprise to get unlimited custom fields, thanks.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 31,
+    "subject": "WHY AM I BEING CHARGED FOR 15 SEATS WHEN WE ONLY HAVE 8 PEOPLE",
+    "body": "This is ridiculous, my renewal invoice just came through for $8,820 for 15 seats but we've only ever had 8 people on our workspace, I'm looking at the Members page right now and it clearly shows 8 active users so why in the world are we being billed for nearly double, we need this fixed before the renewal goes through next week because someone on our team must have accidentally added ghost accounts or something and I want to know exactly who did what and how to clean this up so we're not overpaying.",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 32,
+    "subject": "We need a refund for last month - seats were provisioned to wrong users",
+    "body": "Hi, we discovered that our former contractor still had active access to our workspace for the entire month of April and was able to view all our project data, we only realized this when we checked the audit log today and saw their name in there multiple times. We were charged for 12 seats that month but 1 of them shouldn't have been active at all since they left on March 31st. Can you issue a credit for that seat for April ($49) and also confirm you can permanently remove their access so this doesn't happen again, we need this resolved today since we're concerned about what data they may have accessed.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 33,
+    "subject": "Recurring billing stopped processing on our account",
+    "body": "Hi, we have 12 seats on the annual plan and our card was supposed to be charged on the 15th each month but this month nothing went through and we're getting errors when trying to access the billing portal - it just shows a 500 error every time we click into it. Our team can't manage seat allocation or see our invoice history right now and I'm not sure if the next billing cycle will even go through or if we're going to lose access. Can you check what's happening with our account?",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 34,
+    "subject": "Need to add more seats before EOD - current plan is full",
+    "body": "Hi we're onboarding 3 new project managers today and they need access to the workspace but were told we've hit our seat limit on the current plan. How quickly can we upgrade from 10 to 15 seats? Also do we get prorated billing for the remainder of the month or is it calculated differently since we're mid-cycle with invoice #INV-4521? Need this sorted ASAP so the team can actually start working.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 35,
+    "subject": "We need MORE SEATS immediately - 2FA setup is broken and blocking our entire account access",
+    "body": "This is ridiculous. We just added 3 new team members to our account yesterday and tried to enable 2FA for security before they start working, but now NONE of us can log in - the 2FA setup keeps failing and we're completely locked out. We're currently on the 5-seat plan but obviously need to upgrade anyway, so can someone PLEASE help us get access back and tell us the pricing for 12 seats instead because this is costing us hours of lost productivity and we have a deadline today.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 36,
+    "subject": "Can't find user in our workspace permissions section",
+    "body": "Hi, we recently added 5 new seats to our workspace but one of our team members isn't showing up when I search for them in the permissions settings to assign them roles. I've tried searching by first name, last name, and email address but nothing comes up. They're able to log in fine and they're definitely in our org, so I'm not sure whats going on. This is blocking us from getting them set up with the right access levels. Can you help me figure out why the search isn't finding this user?",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 37,
+    "subject": "2FA requirement blocking our user onboarding - need to upgrade plan before we lose the client deal",
+    "body": "Hi, we're trying to onboard a new client today who requires 2FA on all user accounts for compliance, but I just realized our current $49/seat plan doesn't include that feature - it's only available on the Enterprise tier. We have about 40 seats we need to provision and their contract starts tomorrow so we're pretty tight on time. Can we jump to a plan that has 2FA included and what would that cost us for the remaining 9 months of our fiscal year, we'd need the invoicing ASAP so we can get this approved.",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 38,
+    "subject": "Question about file storage limits on the Professional plan",
+    "body": "Hi, we're currently on the starter plan with 5 seats at $49/seat and I'm trying to figure out if we can keep using the same plan or if we need to upgrade. Our team has been attaching a lot of PDFs and documents to projects and I'm not sure what the storage limits are for each tier, can you send me the pricing breakdown so I can see what we'd be paying if we went to Professional? Just want to know the numbers before I approve it with accounting.",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 39,
+    "subject": "URGENT: We need more seats immediately - Gantt view not loading for half our team",
+    "body": "We're on the Professional plan with 15 seats but our project keeps getting held up because the Gantt view crashes whenever more than 8 people try to access it at the same time, so now half the team can't see the timeline and we're completely stuck waiting to finish this client deliverable. Do we need to upgrade to the Enterprise plan to get this fixed or can we just buy 10 more seats at $49/month? We need this sorted TODAY because we're losing time and I'm honestly frustrated that this is even a problem in the first place.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 40,
+    "subject": "Multiple team members can access accounts that should be restricted",
+    "body": "We just realized that two former employees still have active login access to our workspace and have been able to view client project files through their old accounts, we have 8 seats total on our plan and we're not sure how long this has been happening. Can you immediately revoke their access and let us know if there's a way to see their login history? We're in compliance audits right now so this is pretty critical.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 41,
+    "subject": "Charge for time tracking feature we're not using",
+    "body": "Hi, we were charged $245 last month for 5 seats but we only used the project management suite and never enabled the time tracking module. I know it's included but we're not utilizing it and frankly don't plan to, so I'm wondering if we can get that portion of the charge reversed or applied as a credit toward next month since we're essentially paying for something we don't need.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 42,
+    "subject": "Need to disable webhooks for departed team member - charging extra seats",
+    "body": "Hi, we had an employee leave last week and I removed their account from the workspace but their old webhook URL is still firing events to their personal email server which we're now being billed for since the webhook integrations use API calls, is this considered a seat charge? We've been charged for 12 seats this month but only have 8 people and I need to get that credit applied before the next billing cycle, we can't proceed with any projects until this is sorted because the webhook config is tied to permissions and I can't find where to actually delete or disable the old endpoints.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 43,
+    "subject": "We're being charged for 15 guest accounts we can't remove - FIX THIS NOW",
+    "body": "I don't understand why we keep getting billed for guest access seats every month when we disabled it weeks ago, our workspace settings show guests are turned off but the invoices still show 15 seats we're not even using and losing money on this and I need this reversed immediately and our credit card charged back before end of day - this is ridiculous we've asked twice already and nobody fixed it, what is going on??",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 44,
+    "subject": "Question about Gantt view and whether we need more seats",
+    "body": "Hi, we're currently on the 5-person plan and have been testing out the Gantt view feature for our construction projects. It looks great but I'm wondering if we should upgrade to a larger plan since it seems like the Gantt might be limited to certain plan tiers? Also trying to figure out if we need to add 2 more seats or if we can make do with the current setup and just do a different workflow. Can you clarify what's included in each plan when it comes to Gantt charts, and maybe send over pricing for the 10-seat tier so I can run it by my team.",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 45,
+    "subject": "API webhooks not firing for task updates in production",
+    "body": "Hi, we're integrating your API into our internal workflow automation and the task.updated webhooks stopped firing sometime last night around 11pm UTC. We're still able to query tasks directly through GET endpoints so the API itself seems up, but our automation is basically dead in the water without the webhooks. We have 12 seats and this is blocking our team's daily sync process. Can someone check if there's an issue on your end or if we need to reconfigure something? We're on the standard plan and this needs to get working today if possible.",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 46,
+    "subject": "Custom fields disappeared from all projects - we need our money back for this month",
+    "body": "We've been using your platform for 3 months now and had set up custom fields for all our active projects to track our internal workflow, but this morning every single one of them just vanished without warning. We have 12 seats on the $49 plan and paid for the full month already. The fields are completely gone - not hidden, not archived, just gone - and we have no idea what happened or how to get them back. Your documentation says custom fields should persist in projects but clearly that's not what's happening here, this is completely unacceptable and I want a credit for this month since we can't even use the tool properly right now. Can someone actually look into why this happened instead of sending me generic troubleshooting steps?",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 47,
+    "subject": "Do we need additional licenses for sprint reports feature?",
+    "body": "Hi, we're looking at rolling out sprint reports across our engineering dept and want to understand how many seats that would require. Currently we have 12 seats on the Professional plan, but I'm not sure if sprint reports require a higher tier or if each person generating reports needs their own license. Can someone clarify the pricing on this before we make the purchase? We're not in a rush, just want to budget this correctly for next quarter.",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 48,
+    "subject": "why am I being charged for guest users when I only need 3 team members??? this is ridiculous",
+    "body": "I've been using your platform for 2 months and just realized I'm being charged $49 per seat even though half my seats are just guests who barely use it, we only actually have 3 people using it regularly but apparently all these guest accounts are costing me a fortune and I don't even understand why guest access would cost the same as full seats when they can't even do half the stuff regular users can do, can you guys just explain your guest pricing or do I need to downgrade my plan because this seems like a huge ripoff and I'm seriously considering switching to something cheaper",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 49,
+    "subject": "need to add 3 more seats before end of day - urgent",
+    "body": "Hi, we just realized our current plan only covers 12 seats but we have 15 people who need access starting today for a client project that started this morning. I'm not getting the email notifications about seat usage so I didn't catch this sooner. Can you let me know the cost to upgrade to 15 seats and if you can process it immediately? We're bleeding money on this project without everyone having access.",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 50,
+    "subject": "Charged twice for Jira sync add-on this month",
+    "body": "Hi, we got billed $147 for the Jira sync integration twice on our invoice dated March 15th and March 15th again (looks like a duplicate charge). We're on the 6-seat plan at $49/seat so we should only see one charge. Can you credit back the extra $147 to our account, we can look at the invoice details if needed.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 51,
+    "subject": "Mobile app charges on my card but desktop isnt",
+    "body": "Hi, I noticed we're getting charged for 12 seats on our monthly invoice but when I check the mobile app I only see 8 active users, the desktop version shows the same 8 but somehow the billing still reflects 12 and I'm not sure if theres a sync issue or if we're just being charged for unused seats, can someone clarify whats going on with the seat count vs what were actually paying for?",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 52,
+    "subject": "Need clarification on audit log retention in our current plan before we add 15 more seats",
+    "body": "Hi, we're looking to expand our team from 8 to 23 users but I need to confirm something first - our compliance officer just asked me how long audit logs are retained on the Professional plan ($49/seat) and whether that changes if we upgrade to Enterprise. We need 90 days minimum for our SOC 2 audit coming up in 3 weeks so I want to make sure before I submit the purchase order for the additional seats.",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 53,
+    "subject": "STOP CHARGING ME FOR 15 SEATS WHEN I ONLY HAVE 3 PEOPLE - FIX THIS NOW",
+    "body": "We've been overcharged for the last 3 months because your system keeps charging us for 15 active seats but we literally only have 3 employees using this thing. I removed the other 12 users weeks ago but the invoice still shows 15 and I'm getting billed $735 every month for seats that dont exist, can you please reverse these charges immediately and explain why your platform is doing this because were losing money here and I need this fixed today.",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 54,
+    "subject": "2FA broken after latest update - cant log in to our workspace",
+    "body": "We updated yesterday and now none of my team can get past the 2FA screen, it keeps saying \"invalid code\" even though we're entering the codes correctly from Google Authenticator and it was working fine before. I've tried logging out completely and back in, cleared cache, tried a different browser, nothing works. We have 12 seats and this is blocking everyone from accessing projects we need to demo to a client tomorrow but honestly I'm more concerned about why you broke something that was working fine in the first place. How do we fix this??",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 55,
+    "subject": "Invoice PDF not generating for our April billing cycle",
+    "body": "Hi, we're having an issue where our April invoice PDFs aren't being created when we download them from the billing page, we just get a blank white page instead of the actual PDF with line items. This has been happening since April 1st and we've tried different browsers and accounts with admin access. We have 12 seats so the invoice should show the full $588 charge but nothing is rendering. Since we need these PDFs for our accounting department I'd like to request a credit for this month while you fix the bug, and can you send me the correct PDF manually in the meantime?",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 56,
+    "subject": "Mobile app task assignments not syncing to desktop - been stuck for 2 days",
+    "body": "Hi, we're on the 12-seat plan and I'm noticing that when I create or reassign tasks in the mobile app, they're not showing up on the desktop version for about 30 minutes to an hour. My team lead assigned 3 tasks on her phone yesterday morning and we didn't see them appear on the main dashboard until afternoon, which messed up our sprint planning. The documentation says sync should be instant or within a few minutes so something's definitely off. This is happening consistently across both iOS and Android in our org. Can you look into this?",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 57,
+    "subject": "Charge for calendar sync feature we're not using",
+    "body": "Hi, we got billed $588 last month for 12 seats but we never actually turned on the calendar sync integration that was supposed to be included, our team decided to go with google calendar instead so we're not getting value from that add-on. Can we get that portion of the charge reversed or credited back to our account? Invoice #INV-47293 from last billing cycle.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 58,
+    "subject": "Calendar sync isnt working and our whole account permissions got reset somehow",
+    "body": "Hi, we've been trying to sync our team's calendars through the workspace settings but nothing is showing up in the integration tab, also we just noticed that all the custom roles we set up for our 12 seats disappeared and everyone has admin access now which is a security issue we need fixed immediately. This happened sometime in the last few hours. Can you help us restore the role permissions and figure out why the calendar sync broke, we're on the $49/seat plan and our team can't coordinate without either of these working.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 59,
+    "subject": "iOS app crashing when trying to view task dependencies",
+    "body": "Hi, we've been having an issue with the mobile app on iOS where it consistently crashes whenever anyone on our team tries to open the Dependencies view in any project. We have 12 seats and this has been ongoing since yesterday afternoon. The desktop version works fine so we know it's an app-specific bug. We need this fixed today if possible since people are using mobile to check tasks on site, and if it can't be resolved by end of business we'd like a credit applied to our account for the downtime. Thanks",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 60,
+    "subject": "Kanban board not saving card movements - losing work",
+    "body": "We have 12 seats and this started about 20 minutes ago. When we drag tasks between columns on the kanban board they appear to move but when we refresh the page or navigate away they're back in the original column, this is happening for all users on our workspace. We've tried clearing cache and logging out/in but the issue persists. Our team is blocked on sprint planning right now so this needs to be fixed asap, we're on the enterprise plan and invoice #INV-8847 if you need to check our account.",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 61,
+    "subject": "2FA setup blocking our new team members from accessing the platform - need to upgrade seats first?",
+    "body": "Hi, we're onboarding 12 additional users this week and I went to enable two-factor authentication across the board but it's saying our current plan only allows 2FA for up to 8 seats, which seems like it might be a Pro plan feature. We've got 8 people active right now on the standard plan at $49/seat but if we need to move to Pro to get 2FA working for everyone I need to understand the cost difference and whether we can do that retroactively for this billing cycle since we're already running into issues with our security requirements.",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 62,
+    "subject": "Email notifications not sending for task assignments",
+    "body": "Hi, we've noticed that our team members aren't receiving email notifications when tasks are assigned to them in the project boards. The notifications show as 'sent' in our settings but people are checking their spam folders and nothing is coming through, we have this turned on for all 8 seats and it was working fine last month. Can you check what's going on with the SMTP integration or whatever might be blocking these? We can wait until next week to sort this out.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 63,
+    "subject": "WTF why am I being charged for 15 seats when we only have 8 people using this??",
+    "body": "I just got our invoice for this month and you're charging us $735 but we literally told you when we set up the Jira sync integration that we only needed seats for our 8 core team members, not 15. I don't know if this is a glitch with how the sync is counting our Jira users or if someone on your end messed up our license, but this is seriously cutting into our project budget and I need this fixed TODAY before our CFO starts asking questions. Can someone tell me exactly what's happening with our seat allocation and how you can get us back to what we're actually supposed to be paying?",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 64,
+    "subject": "URGENT: Being charged for guest accounts we didn't authorize - need credit NOW",
+    "body": "We just realized we're being billed for 47 seats this month but we only have 12 employees. I checked the guest access settings and someone enabled guest invites without asking me and apparently every single person we've shared projects with got added as a paid seat. This is costing us almost $1800 we don't owe and we need that credited back immediately. I'm the workspace admin and I should have been the only one able to change permission settings but somehow this happened anyway. Fix this NOW and tell me how to get my money back.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 65,
+    "subject": "URGENT: We're being charged for 150 seats but our SAML is only syncing 89 active users",
+    "body": "Hi, we just noticed our monthly bill came through for the full 150 seats we set up in Okta SAML, but our actual active user count in the system is showing 89 because the sync broke last week when we migrated SSO providers. Invoice #INV-2024-87341 shows $7,350 for this month and we need to understand if we're going to keep getting overcharged while the integration is down. Our account manager said to reach out to billing directly about this since it's costing us money every day it's not working, can someone help me figure out what we owe?",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 66,
+    "subject": "Need to adjust Gantt view visibility for new team members",
+    "body": "Hi, we just added 3 new seats last month and I'm trying to figure out how to control which projects show up in the Gantt view for different user roles. Right now everyone with access can see the same view but I want our interns to only see certain timelines. Is this a permissions thing I set in the role settings or do I need to do something else? We're on the professional plan so hopefully this is included.",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 67,
+    "subject": "Seats being charged but users cant log in since migration",
+    "body": "We migrated our workspace yesterday and now 12 of our 15 active seats show as 'provisioned' but when those users try to log in they get a 403 error, we're currently blocking work on 3 client deliverables and I need to know if this is a known issue or if something broke during the migration. Our invoice shows we're still being billed for all 15 seats so the system thinks they exist but theyre unusable, can you help us figure out whats happening?",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 68,
+    "subject": "API endpoints returning 500 errors for the last 3 hours - we're blocked from syncing data",
+    "body": "This is completely unacceptable. Our entire workflow automation depends on your API and it's been down since around 2pm EST throwing 500 errors on every POST request to /projects/{id}/tasks. We have 47 seats on the Premium plan and literally cannot process any customer orders because our integration can't push data through. How is this happening with zero status update from your end? This is costing us thousands right now.",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 69,
+    "subject": "Slack integration completely broken - notifications havent worked in 2 days",
+    "body": "We've been using your tool for 6 months now with 12 seats and the Slack integration just stopped working. We're not getting any notifications in our #projects channel anymore, which is really frustrating because we rely on these to stay on top of task updates. I checked the connection settings and everything looks configured correctly but its just not syncing anything. This has been down since Tuesday and honestly its making me question if we should even be paying $588/month for this if core features just randomly stop working without any warning from you guys.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 70,
+    "subject": "Charged twice for October subscription - need credit",
+    "body": "Hi, we were billed $1,470 on Oct 1st and then again on Oct 15th for the same 30 seats, I have both invoice PDFs attached showing the duplicate charges. This is costing us money every day its not fixed so I need either a credit issued back to our card or an explanation of why were being charged twice. Can you look into this today?",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 71,
+    "subject": "question about renewing our annual plan and pricing",
+    "body": "Hi, we're coming up on our renewal date next month for our annual contract and I wanted to check if there's any discount if we commit for another year or maybe lock in current pricing before it changes, we currently have 12 seats and might want to add a couple more when we renew too, thanks",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 72,
+    "subject": "Need to add SAML SSO before our rollout tomorrow",
+    "body": "Hi, we're rolling out your platform to our entire 200-person org tomorrow morning and we realized our IT dept requires SSO through our corporate directory - we don't have time to manually provision 200 accounts and I can't proceed with onboarding until we get SAML working. Do we need to upgrade our current plan or is there an add-on for this, we're currently on Professional tier and our contract is set to renew next quarter. What are the costs and how quickly can this be enabled?",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 73,
+    "subject": "Why am I being charged TWICE for the same month???",
+    "body": "We've been using your platform for 6 months now and this is getting ridiculous, I just noticed I got charged on the 15th AND again on the 1st of this month for our 12 seats, so that's $1,176 in duplicate charges sitting on our credit card right now and nobody can explain why this happened, I need to understand what's going on with the billing cycle because our CFO is asking questions and I don't have answers.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 74,
+    "subject": "need to remove user and get credit for unused seat",
+    "body": "Hi, we need to immediately remove one of our team members from the workspace since they left the company today. We're on the 8 seat plan at $49/seat and only need 7 going forward, so we should get a credit for the unused seat this month since they didnt even log in to see the sprint reports yet. Can you process the removal and adjust our invoice accordingly, thanks.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 75,
+    "subject": "URGENT: Our entire webhook authentication broke after someone changed workspace permissions and now we can't receive ANY data",
+    "body": "We have 12 seats and this is costing us thousands in lost integrations - this happened right after I noticed someone with admin access modified the API permissions in our workspace settings but I never authorized that, I can't figure out who did it or how to rollback and our webhooks just stopped authenticating completely. Our integrations are dead in the water and we've been losing customer data for hours. Who has access to change these settings and WHY is there no audit log showing what changed?",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 76,
+    "subject": "Question about per-seat billing when we switch to SSO login",
+    "body": "Hi, we're planning to implement SAML SSO for our org next month and I wanted to clarify how the seat-based pricing works once we do that. Currently we have 12 active seats but with SSO enabled would we be billed differently or would it still be the same $49 per seat that shows up on our invoice? Also does the way we authenticate users affect how you count active vs inactive seats for billing purposes, just want to make sure we understand the charges before we roll this out to everyone.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 77,
+    "subject": "Our SSO isn't working and we're being charged for licenses we can't even use",
+    "body": "We've had our SAML integration completely broken for 2 days now and NOBODY on your support team has gotten back to us, meanwhile we're still being charged $49 per seat per month for 15 people who literally cannot log in or do any work. This is ridiculous, we have a project deadline tomorrow and half the team is locked out. Can someone PLEASE either fix the SSO or explain why we shouldn't be billed for this month since we can't access the platform at all?",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 78,
+    "subject": "Guest user invites not sending email notifications",
+    "body": "We've had a couple of our clients report that when they're added as guest users to projects, they're not receiving the invitation emails. I checked one of the accounts and the guest was successfully added to the project in the system but no email ever came through, we're on the 5-seat plan right now and this has happened twice in the last week with different guests so it's not a one-off thing. Our main users can still get email notifications fine for other stuff so it's specifically the guest invite emails that seem broken. Can you look into why these aren't being sent?",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 79,
+    "subject": "Slack integration still charging after we disabled it last week",
+    "body": "We removed the Slack integration from our workspace on the 15th but we're still seeing the $49 charges for 2 additional seats showing up on our invoice. The integration isn't even active anymore and we definitely disabled it in settings, wanted to confirm if we need to manually do something else to stop the recurring charges or if there's a billing sync issue on your end that needs fixing.",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 80,
+    "subject": "We need more seats asap - kanban board limit is killing us",
+    "body": "Our team has grown to 12 people but we're still on the 8-seat plan and now only 8 of us can even access the kanban board at the same time which is completely ridiculous, I thought we paid for everyone to use it? We're losing time every day with people getting locked out and having to wait their turn, can you tell me what it would cost to upgrade to 15 seats right now and if there's any way to do it before end of business today because this is beyond frustrating.",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 81,
+    "subject": "Question about email notification settings on our current plan",
+    "body": "Hi, we're currently on the 5 seat plan and I was wondering if the email notification digest feature is something we can get with our current pricing or if thats only available on the enterprise tier? We've got some team members who are getting notification fatigue from individual alerts and I wanted to check before we consider moving up to a higher plan.",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 82,
+    "subject": "question about api access on our current plan",
+    "body": "Hi, we're currently on the 10-seat plan and were looking at integrating your API into our internal tools but I want to make sure that's included at the $49/seat level or if we need to upgrade to a different tier to get full API access? also trying to figure out if we'd need additional seats just for the API integration or if our current 10 covers it, let me know what options we have and I can get approval to move forward.",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 83,
+    "subject": "WHY IS MY INVOICE FROM LAST MONTH MISSING LINE ITEMS???",
+    "body": "This is ridiculous - I just got the PDF invoice for March and it literally doesn't show the breakdown of charges at all, just a total amount due. How am I supposed to reconcile this with my records when I have 12 seats and the invoice doesn't even LIST them individually??? Our finance dept is asking me where this charge is coming from and I can't give them any details because YOUR invoice is completely blank on the details. I need a proper itemized invoice that actually shows what I'm being charged for before I approve payment.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 84,
+    "subject": "need to add 15 more seats asap before end of day",
+    "body": "we've got 3 new contractors starting tomorrow morning and they all need access to the project management tool before their first standup at 9am, currently on the 25-seat plan at $49/month but we're going to need 40 seats total now, can you get me a quote for the upgrade and process it today so i can get them provisioned, also need to know if there's any setup time or if they can access immediately after we upgrade, our CEO is flying in for client meetings and we cannot have these people sitting around unable to access projects",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 85,
+    "subject": "Question about our billing cycle and seat overage charges",
+    "body": "Hi, we just got invoiced for 35 seats this month but I thought we only had 25 on our plan, can you clarify how the overages work and whether we should upgrade to a higher tier plan instead? It might be cheaper to just pay for 40 seats upfront rather than keep getting hit with these extra charges every month.",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 86,
+    "subject": "Slack integration keeps disconnecting - we've lost 3 days of notifications",
+    "body": "We've had your platform for 6 months now and the Slack integration was working fine until yesterday morning. Now every time someone updates a task or assigns something, nothing shows up in our channel for hours - sometimes not at all. We have 12 seats on the plan and this is killing our workflow, we literally don't know when stuff gets assigned to us anymore. We checked our Slack permissions, reconnected it twice, even reinstalled the app but the messages just aren't coming through. This needs to be fixed TODAY because we have a client presentation tomorrow and we can't have people missing critical updates. Why did this suddenly break?",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 87,
+    "subject": "Why are we being charged $49 per person for time tracking that doesn't even work?",
+    "body": "We have 12 seats on your platform and I'm absolutely furious because the time tracking feature we're paying extra for is completely broken - timers won't stop, durations aren't calculating right, and honestly I don't know why we're paying $49/seat/month when half the core features don't function properly so before I waste another month of budget on this can someone please explain what we're actually paying for and if there's a plan that doesn't include these useless features so I can at least reduce our costs",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 88,
+    "subject": "VAT charged incorrectly on invoice INV-2024-087543",
+    "body": "Hi, we received our invoice for last month and noticed the VAT amount seems wrong. We're registered for VAT in Ireland but the invoice shows it was calculated at the UK rate, can you check the invoice details and adjust this for us? We'd like the difference credited back to our account since we shouldn't be paying UK VAT. We have 8 seats on the plan.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 89,
+    "subject": "Need to cancel annual renewal and get credit back - admin access issue blocking our whole org",
+    "body": "Hi, we renewed our annual plan for $2,940 (60 seats at $49) back in January but our new admin lost access when we synced with our directory and now nobody can invite new people or adjust permissions - the login page keeps saying permission denied for all our account managers. We can't do anything until this is fixed. Can we pause the auto-renewal on this invoice and get that charge reversed or credited while we figure out if we're even going to keep this if the admin controls don't work properly?",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 90,
+    "subject": "Why am I being charged for 25 seats when we only use 15??",
+    "body": "We just got our invoice for December and it shows we're paying for 25 seats but we literally only have 15 people using this thing, I don't understand how this happened we definitely scaled down back in October and I need to know why we weren't charged correctly because this is ridiculous we're paying almost $1200 extra this month for nothing, can someone actually look at our account and tell me what's going on with our seat count because your system is clearly not tracking it right and I'm tired of arguing about billing errors every single month, please check invoice #INV-20241201 and fix whatever is wrong",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 91,
+    "subject": "Why is search completely broken after we upgraded to your Pro plan??",
+    "body": "We just upgraded to Pro last week for our 12-person team at $49/seat and now the search feature is basically unusable - I'm getting results from 3 months ago when I search for this week's tasks and our whole workflow is bottlenecked because nobody can find anything. This is costing us actual billable hours right now. Is this some kind of bug with the Pro tier or do we need to pay EVEN MORE for basic search functionality to work? We need this fixed immediately or frankly we're looking at other tools.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 92,
+    "subject": "Search function not working in project filters",
+    "body": "Hi, we've been using your tool for about 3 months now (12 seats) and the search feature within project filters has been completely broken since yesterday morning. We're trying to filter tasks by assignee name but the search just returns no results even when we know the person exists in our workspace, this is preventing our team from organizing work efficiently. I've tried clearing cache and logging out/back in but nothing changes. Given that this is impacting our daily workflow and the search is supposed to work as documented in your help section, we'd like to request a credit for at least this month's subscription while you sort this out.",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 93,
+    "subject": "WHY AM I BEING CHARGED FOR 50 SEATS WHEN WE ONLY HAVE 12 PEOPLE",
+    "body": "This is ridiculous, we set up custom fields in the admin panel last week and now our bill shows we're on the 50 seat tier instead of the 15 seat tier we actually use. I can't even access the billing page to see what happened, it just keeps showing an error. Our finance department needs this fixed immediately because they're holding up payroll approvals until this is resolved. Did adding those custom fields somehow trigger an automatic upgrade??? Nobody on my team authorized this charge and I need to know exactly what's being billed and why before EOD today.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 94,
+    "subject": "Not receiving invoice emails for our account",
+    "body": "Hi we switched payment methods last month and now I'm not getting the monthly invoice emails sent to our billing contact anymore. We have 12 seats on the account and I need these emails to hit our accounting inbox for our records. Can you check why the billing notification stopped going through? Our finance team is asking where last month's invoice went and I need to track this down.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 95,
+    "subject": "Invoice PDF not downloading from account portal",
+    "body": "Hi, we need the invoice PDF for our March billing period (15 seats at $49/seat) to submit to our accounting department before the end of business today but the download button just shows a loading spinner and never completes, we've tried three different browsers and cleared cache but getting the same issue. This is holding up our entire approval workflow right now. Can someone help me get that invoice file or resend it to my email, our account code is PM-2847. Thanks.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 96,
+    "subject": "Duplicate charges on our subscription - need to cancel one account",
+    "body": "Hi, we're being charged twice for the same workspace. We have two separate billing accounts set up that are both pulling our company card and I can't figure out which one is the active one or how to remove a seat/workspace. Can you tell me which login credentials go with which billing account and how I can consolidate these? We've got 12 seats across both accounts and this has been running for 3 days now so we need to fix this asap.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 97,
+    "subject": "Kanban board swimlanes not updating when we reassign tasks across projects",
+    "body": "Hi, we've been using your platform for about 6 months now with 12 seats and noticed an issue with the kanban board. When we drag a task from one swimlane to another, the swimlane view doesn't refresh properly on other users' screens even though the task does move in list view. We have to manually refresh the page to see it. This happens consistently but it's not blocking our workflow since we can work around it, just wanted to flag it since the documentation says changes should sync in real-time across all views.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 98,
+    "subject": "Need to add more seats before sprint ends Friday",
+    "body": "Hi, we're running sprint reports and realized we need seats for 3 more team members to access the tool by end of day Friday since they need to pull their individual metrics for the planning meeting. Our current plan is 12 seats at $49/month and I need to know the pricing for bumping up to 15 seats and if we can get them activated today or tomorrow, also do we pay prorated for the rest of this month or is it just added to next billing cycle? Invoice is #INV-284521 if that helps.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 99,
+    "subject": "WHY CANT MY TEAM SEE THE GANTT CHART - PERMISSIONS ISSUE",
+    "body": "We have 8 seats and I set up our project manager role with what I thought were the right permissions but now half my team says they cant access the gantt view and I'm getting frustrated because I had to grant them viewer permissions to even see anything but apparently that blocks the gantt. This is ridiculous - how am I supposed to manage this when the permission structure makes no sense, I need to know exactly what role settings allow someone to VIEW the gantt chart without being able to edit it because right now they just see a blank space and its wasting everyones time. Can someone explain this clearly because the docs are confusing.",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 100,
+    "subject": "Need to update who can access our Jira integration settings",
+    "body": "Hi, we've got 12 seats on the plan right now and I need to change permissions so only our project leads can modify the Jira sync settings instead of everyone in the workspace having access to it. We just onboarded a new contractor and don't want them touching those integrations. Can this be done from the admin panel or do I need to adjust individual role permissions? We're still using it today so not critical but would be good to sort this out.",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 101,
+    "subject": "Invoice PDF from last month shows wrong number of seats charged",
+    "body": "Hi, I received the PDF invoice for our account from last month and I'm seeing we were charged for 15 seats when we only had 12 active users at that time, we removed 3 people mid-month and I thought the billing would adjust automatically but it looks like we got overcharged. Can you send me a corrected invoice and process a credit for the difference, we're still on the annual plan so it should be straightforward to fix this before next month's cycle.",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 102,
+    "subject": "Why am I being charged twice for 2FA setup???",
+    "body": "Hi, I've been trying to enable two-factor authentication on our account for the past week and every time I try to verify my phone number it keeps failing and somehow charging me again, I now see THREE separate $49 charges on my invoice for what should be ONE seat and I have no idea what's happening or why your system keeps billing me when nothing is even working, this is ridiculous and I need someone to actually look at what's going on with these duplicate charges before I have to escalate this to accounting",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 103,
+    "subject": "Search function completely broken - been down for 2 days, this is ridiculous",
+    "body": "We've got 12 seats on your platform and I've been trying to search for tasks assigned to our marketing team but literally NOTHING comes up, even though I can see the tasks in the list view right there on the screen??? This has been broken since Tuesday and you're charging us $588/month for software that doesn't work. Your documentation says the search should find all tasks by assignee but it's returning zero results every single time I try, and frankly at this point I want a credit on our account for the past week because we're paying for features that are non-functional. What's going on with your search engine and when will this actually be fixed.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 104,
+    "subject": "Why am I being charged for 15 seats when we only have 10 people??",
+    "body": "This is ridiculous, we've had 10 team members for the past 3 months but our invoice from last week shows charges for 15 seats and I literally cannot figure out why. I went into the Gantt view to check project assignments and I don't see any extra users there, so I have no idea where these phantom 5 seats are coming from. We're bleeding money on this and need this sorted TODAY before it hits our accounts again next month. Can someone please explain the charges on invoice #INV-47829 right now?",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 105,
+    "subject": "Question about our monthly billing for time tracking usage",
+    "body": "We just got our invoice for last month and noticed we were charged for 15 seats but we only have 12 active users, the extra ones must be from when our contractors were using the time tracking module for that one project in August. Can someone clarify how the seat count is calculated and whether we should expect to pay for seats that only use time tracking or if those get metered differently?",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 106,
+    "subject": "Need to upgrade our plan for calendar sync feature - how many seats do we need?",
+    "body": "Hi, we're currently on the 5-seat Professional plan and we're trying to enable calendar sync for our team but it looks like that feature is only available on Enterprise. We need to know if we can add just a couple more seats to unlock it or if we have to upgrade our whole plan to Enterprise, and what that would cost monthly since we're trying to budget for this before end of quarter.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 107,
+    "subject": "Question about attachment storage limits on different plans",
+    "body": "Hi, we're looking at upgrading from the starter plan to professional since we need more file attachment capacity for our design team. Currently we're on 5 seats but trying to figure out if the professional plan at the higher per-seat cost includes more storage per user or if attachment limits are the same across all plans? Also do we need to reach out to sales for a quote on this or can we just upgrade through the dashboard, we have about 12 people who would need access.",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 108,
+    "subject": "Question about our invoice from last month",
+    "body": "Hi, I was looking at our bill from March and noticed we were charged for 12 seats the whole month but we only onboarded everyone to the kanban board halfway through. I see the charge is $588 for the full month at $49 per seat, just wanted to confirm if that's the standard billing cycle or if there's a way to prorate that since we weren't using all the seats for the full period. Not urgent or anything, just trying to understand how the charges work.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 109,
+    "subject": "Can't upload attachments to tasks - permissions issue?",
+    "body": "Hi, I've been trying to attach files to tasks in our workspace but keep getting a 'permission denied' error even though I'm listed as an admin. This is blocking my team from sharing documents on like 5 different projects right now. My coworker Sarah can upload fine and we have the same role, so I'm not sure what's different about my account. Can you check my permissions or whatever might be preventing this? We need this resolved today if possible. Thanks",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 110,
+    "subject": "Need to add custom fields to our workspace and admin settings aren't letting me",
+    "body": "Hi, we just realized our workspace permissions are configured wrong and I can't access the admin settings to add the custom fields we need for our projects. I'm the account owner but when I go to the settings panel it says I don't have permission to modify workspace configuration. We're blocked right now since our team can't track the data we need and honestly if this isn't fixed by end of day we'll need to request a credit for this month's 12 seats since we literally cannot use the tool. Can someone walk me through how to fix the role permissions so I can get into the custom fields setup?",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 111,
+    "subject": "Admin permissions not syncing after Jira integration setup",
+    "body": "Hi we just connected our Jira workspace to the project management tool and set up the sync, but I'm noticing that the admin role permissions I assigned to myself in the tool settings aren't carrying over to the synced Jira projects, and now my team members are seeing tickets I shouldn't have access to view. We have 12 seats on the plan and need to get this sorted before end of day since we're trying to lock down who sees what before we go live with Jira sync next week. Can you check my account permissions and the workspace role settings?",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 112,
+    "subject": "Charged twice for March billing cycle - need credit",
+    "body": "Hi, we were charged $1,176 on March 1st for our 24 seats but then got hit with another identical charge on March 3rd when we activated the Slack integration. We're currently blocked from using the tool because we can't justify the duplicate billing to our finance team and they won't approve further usage until this is resolved, can you credit us back for the extra charge and explain why the integration triggered another full cycle payment?",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 113,
+    "subject": "why am I being charged for 25 seats when we only have 12 people???",
+    "body": "This is ridiculous, we got our invoice today and it says we're paying for 25 seats but we literally only have 12 employees using this tool, I can't even find where in the billing section to search or filter our actual seat assignments to verify what's actually being charged, we need to figure out what's happening with our May invoice immediately because finance is breathing down my neck about this overcharge and I can't do my job managing the team if I don't know what we're actually paying for",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 114,
+    "subject": "Question about our monthly charge for the Gantt view feature",
+    "body": "Hi, I'm going through our invoices from the last three months and I noticed we're being charged $49/seat/month but I want to clarify if the Gantt view is included in that price or if it's a separate add-on we should be paying for. We have 8 seats and I want to make sure we're not being overcharged or missing something on our billing setup, can you check our account and let me know what the breakdown should be looking like.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 115,
+    "subject": "Jira sync stopped working and we're being charged for seats we can't use",
+    "body": "Hi, our Jira integration broke sometime last night and now none of our developers can push updates through the sync anymore, we have 12 seats on the $49 plan and we're completely blocked on our sprint work. This has been down for about 6 hours and I need to know if theres a known issue or if something on our end triggered this, also want to understand if we should be charged for the full month if the feature isnt working since its part of what we paid for.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 116,
+    "subject": "Gantt chart feature - want to confirm pricing before rolling out to our whole team",
+    "body": "Hi, we've been using the basic plan with 12 seats for the past few months and just realized the Gantt view is only available on the professional tier at $49/seat. We're currently looking at maybe upgrading 5 seats just to test it out but want to make sure I understand the billing - if we add 5 professional seats would that be a separate charge or does it modify our whole subscription somehow? Also curious if there's any volume pricing since we're potentially looking at upgrading everyone eventually.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 117,
+    "subject": "need to add time tracking seats before end of month",
+    "body": "Hi, we just realized our 5-seat plan doesn't include time tracking for our contractors and we have three people who need it activated asap since they're billing hours right now without being able to log them in the system, can we upgrade to a higher tier or add time tracking module seats separately? what would that cost and can it be done today since were losing time data as they work",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 118,
+    "subject": "Lost access to custom fields after permissions change",
+    "body": "Hi, we updated our workspace permissions yesterday and now several team members can't see the custom fields we set up for our project templates, they're showing as blank even though the fields still exist in the workspace settings. This is blocking work on multiple active projects and we're losing time trying to figure out what went wrong. We have 12 seats and need this fixed asap since clients are waiting on deliverables. Can you check what happened with the permissions on custom fields or if there's a setting I'm missing.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 119,
+    "subject": "Recurring charges going through even after we canceled subscriptions - need immediate credits",
+    "body": "Hi we had 12 seats on the annual plan at $49/seat but canceled on Dec 15th through the dashboard, yet we were just charged again on Jan 1st for the full year ($7,056) even though the cancel was supposed to take effect immediately. I've confirmed the cancellation went through on our end and I have the confirmation email, but the charge still hit our account and now we're being double-billed since we migrated to a competitor. Can you immediately reverse the Jan 1st charge and confirm that no further recurring charges will process? We need this resolved today as our finance team is reviewing the transaction and this is impacting our cash flow.",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 120,
+    "subject": "API key permissions issue blocking our workflow",
+    "body": "We added a new seat this morning and created an API key for the integration but it seems like the permissions aren't inheriting from our admin role properly, our automation is completely down and we can't push data through. We've got 12 seats on our account and were charged for this one already so we need either this fixed immediately or a credit back for the month since we literally cannot use the product right now. The API docs mention role-based permissions but our new key doesn't have the same access as my admin account even though I selected admin during setup.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 121,
+    "subject": "Our annual renewal processed but tasks aren't syncing to Slack anymore",
+    "body": "We just renewed our 15-seat plan for another year and the invoice went through fine, but starting this morning none of our task updates are showing up in our Slack channel even though the integration was working perfectly all last year. I checked the integration settings and everything looks connected, webhooks are enabled, we haven't changed anything on our end. Is this a known issue with renewals or did something break with the sync? Our team is still able to work in the tool itself but they're not getting the notifications they expect in Slack.",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 122,
+    "subject": "Kanban board swimlanes not sorting correctly after bulk reassignment",
+    "body": "Hi, we're on the 12-seat plan and noticed that when we bulk-reassign tasks to different team members using the kanban board, the swimlanes aren't reorganizing properly - they stay in the old order instead of grouping by assignee like the documentation says they should. We can still move things around manually but it's pretty inefficient when we're onboarding new people and reassigning a bunch of work at once. This started happening yesterday after we upgraded to the latest version. Can you take a look?",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 123,
+    "subject": "Invoice VAT charge is wrong - need to add more seats but confused about pricing now",
+    "body": "I got our monthly invoice yesterday and there's a VAT charge that wasn't there before, it's adding like 200+ EUR to our bill for no reason??? We're trying to upgrade from 15 to 20 seats next month but now I don't even know what the actual cost will be because your invoice doesn't break down what the VAT should be. Can someone explain why this suddenly appeared and what our total will be for 20 seats with VAT included, because my CFO is asking me right now and I literally cannot process the seat upgrade until I know the real numbers.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 124,
+    "subject": "2FA requirement blocking team access",
+    "body": "Hi, we need to enable two-factor authentication for our org but it looks like that's only available on the Enterprise plan at $99/seat. We're currently on the $49 Professional plan with 8 seats and our security team won't let us proceed without 2FA so we're stuck right now and can't move forward with any projects until this is resolved. Can we upgrade just to get 2FA enabled or is there another way to do this without paying for the full Enterprise tier?",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 125,
+    "subject": "question about adding more seats to our plan",
+    "body": "Hi, we're currently on the 10 seat plan and our team has grown to 15 people now. I need to know if we can just upgrade mid-cycle or if we have to wait until renewal, also do we get charged prorated or what's the deal with file attachments limits on the higher tier plans because we've been hitting some walls there",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 126,
+    "subject": "Gantt chart crashing when we load tasks with dependencies - blocking our sprint planning",
+    "body": "We've been trying to use the Gantt view for our Q1 planning all morning and it crashes every time we try to load more than ~200 tasks with dependency lines enabled, we get a white screen and have to force refresh. According to your docs the Gantt view should handle 500+ tasks without issue. We have 8 seats at $49/month and honestly this feature isn't working as advertised - we need either a fix ASAP or we'd like a credit applied to our account since we're essentially paying for functionality that's completely broken right now and we can't move forward with our project schedule until this is resolved.",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 127,
+    "subject": "Need to check who deleted our project templates yesterday",
+    "body": "Hi, we're trying to figure out who made changes to our workspace yesterday afternoon and deleted some critical project templates that we need to rebuild, can you pull the audit log or activity history for our workspace (Project ID: WS-4521) so we can see all the actions taken between 2-5pm? We have 12 seats on the account and need this ASAP since our team can't proceed with new projects until we understand what happened and restore them.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 128,
+    "subject": "INCORRECT VAT CHARGE ON INVOICE #INV-47382 - WHY ARE WE BEING OVERCHARGED??",
+    "body": "We just got our invoice for 15 seats and the VAT calculation is completely wrong, we're being charged at 23% when our company is VAT exempt in the UK and I've already submitted our exemption certificate THREE times through your system and its still showing on this month's bill, this is ridiculous and I need someone to fix this TODAY before our finance team loses it, are you going to honor the correct amount or do we need to contact our accountant and escalate this further because honestly I'm about ready to shop around for a different tool if this keeps happening",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 129,
+    "subject": "Question about SSO pricing for our enterprise tier",
+    "body": "Hi, we're currently on the Professional plan with 12 seats and we're looking at rolling out SSO/SAML across our org since we just migrated to Okta. I see SSO is available on Enterprise but I wanted to confirm before we upgrade - does the $49/seat pricing stay the same on Enterprise or does it change, and roughly how many additional seats would we need to account for service accounts? Also do you have any bundle pricing if we commit to annual billing, we're planning to go live with this in early January so no rush but wanted to get a quote sorted out soon.",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 130,
+    "subject": "Why can't I remove my colleague from our workspace???",
+    "body": "We have 8 seats on our plan and I've been trying for 20 minutes to remove someone from the kanban board access but their name keeps appearing in the permissions dropdown, I'm going insane. They don't work here anymore and I definitely have admin rights so I don't know why this isn't working. Nobody should be able to see their tasks when theyre not even supposed to have access anymore, this is a security issue honestly.",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 131,
+    "subject": "Charged twice for July subscription - need this reversed",
+    "body": "Hi, I just noticed we were billed $1,078 on July 1st for our 22 seats but then got charged again on July 15th for the same amount, I never authorized a second charge and our payment method wasn't supposed to renew until August 1st. I don't see any notification emails explaining why this happened, can you check our account and send back the duplicate charge because we're currently locked out of approving invoices in your system until this gets sorted.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 132,
+    "subject": "Jira integration stopped syncing tasks 2 hours ago - 47 seat license",
+    "body": "Our Jira sync just stopped working at around 11 AM EST and we're losing hours of work tracking time here, devs are filing tickets in Jira but nothing is showing up in the project board and we can't get an accurate status on anything. The integration was working fine yesterday, we haven't changed any settings. This is blocking our sprint review thats supposed to be in 90 minutes, any idea whats happening on your end or if there's a known issue?",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 133,
+    "subject": "API usage charges questions",
+    "body": "Hi, we've been using your API to pull project data into our internal dashboard and our most recent invoice showed a charge of $847 that wasn't there last month even though we haven't changed our seat count from 12. I checked the docs but couldn't find where it explains if API calls have any separate billing beyond the per-seat fee. Can you clarify if we're being charged for API usage and if so what our current rate is, we need to understand this before our next billing cycle.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 134,
+    "subject": "Need to cancel our annual subscription and get credit back to our account",
+    "body": "Hi, we signed up for 12 seats on the annual plan back in January but we're consolidating our tools and won't be using your platform going forward. We need to stop the recurring charges immediately since we're blocked from doing any actual work with this tool and can't justify paying for seats we're not using. Can you cancel the subscription for our workspace and process a credit for the remaining months? Our billing contact has invoice #INV-2024-08847 on file if that helps.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 135,
+    "subject": "Invoice PDF not loading - need to process payment for accounting",
+    "body": "Hi, I've been trying to download the invoice PDF from my billing portal for the past two hours to submit to our finance department but it keeps throwing an error when I click the link, we're on 12 seats at $49/seat so this should be a straightforward monthly invoice but I can't access it and now our accounting is blocked waiting on this. Can you either resend the PDF directly or fix whatever's wrong with the portal? Also if there's been any accidental double-charging on this cycle I'll need that reversed before I can get approval from our CFO to process payment.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 136,
+    "subject": "2FA codes not working after setup - can't log in",
+    "body": "Hi, I enabled two-factor authentication on my account this morning and now I can't get back in. I'm entering the code from Google Authenticator but it keeps saying invalid, I've tried waiting for a new code and re-entering it multiple times. The rest of the team is locked out too since I'm the only one with access to the shared projects right now. We have 12 seats on the $49 plan and need to get back in to finish the client handoff today, can you help?",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 137,
+    "subject": "API key permissions not working for our automation workflow",
+    "body": "Hi, we have 12 seats on the Enterprise plan and yesterday I generated a new API key through the workspace settings to integrate with Zapier but it keeps returning a 403 forbidden error when our automation tries to pull task data, we've checked that the key has read permissions enabled and it worked fine with our old key but I need to get this running today since our entire reporting pipeline depends on it, can someone help me figure out what's wrong with the permissions or if there's a setting I'm missing",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 138,
+    "subject": "Charge for Slack integration we're not using",
+    "body": "Hi, we got billed $49 for a Slack integration seat last month but we never actually activated it or used it at all, our team just stuck with email notifications instead. Can you reverse that charge since we weren't using the feature? We're on the annual plan with 12 seats and this was just an extra line item that shouldn't have been applied. Let me know if you need the invoice number or anything.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 139,
+    "subject": "TIME TRACKING COMPLETELY BROKEN - HOURS NOT SAVING FOR 2 HOURS NOW",
+    "body": "We have 12 seats and our entire team has been unable to save ANY time entries since 2pm EST. Every time someone logs hours it just spins and then shows a 500 error, we've tried refreshing, logging out, different browsers nothing works. This is a massive problem because our client billing is automated based on these time logs and we're now locked out of invoicing for today - literally money we can't collect right now. Our account is under PM-4821 and we're paying $588/month for this to work. Can you PLEASE look into what's happening on your end immediately??",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 140,
+    "subject": "Charged twice for September - need to reverse duplicate invoice",
+    "body": "Hi, we were billed twice on Sept 1st for our 12-seat subscription ($588 total instead of $294), looks like a webhook retry issue on your end since we only set up payment once. Can you credit back the duplicate charge of $294 to our account? Our finance team flagged this during reconciliation and we need it resolved before month-end close.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 141,
+    "subject": "Gantt chart not updating when we bulk edit task dates",
+    "body": "Hi, we're using the Gantt view to manage our Q4 roadmap and when I bulk select 15+ tasks and shift them all by a week using the drag feature, the timeline updates on the left side but the Gantt bars themselves don't move until I refresh the page. This is pretty annoying since we do this weekly planning session and have to refresh constantly. We have 12 seats so this affects our whole team. The documentation says bulk edits should be instant in the Gantt view so something's definitely broken here.",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 142,
+    "subject": "We're getting charged for 2 extra seats we don't need",
+    "body": "Hi, we signed up for 5 seats in November but our team downsized to 3 people in December and I never updated the account, so we got charged for 5 seats again this month. Can you adjust our next billing cycle back to 3 seats and credit us for the overcharge on our January invoice? We can sort out the account settings ourselves going forward, just need to get the billing corrected.",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 143,
+    "subject": "CALENDAR SYNC COMPLETELY BROKEN - LOSING DEALS AND WE NEED A CREDIT NOW",
+    "body": "Our entire sales team's calendar integration stopped syncing 3 hours ago and we've already missed 2 client calls because reps weren't getting meeting alerts - this is costing us real money. The integration just shows an error spinning wheel and it says \"sync failed\" but there's literally no error message that tells us what's wrong. We're on the $49/seat plan with 12 seats and this needs to be fixed immediately or we're going to demand credit for today's usage since your product literally isn't working. Can someone please escalate this??",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 144,
+    "subject": "need to upgrade our plan to search across all projects",
+    "body": "hey we're currently on the starter plan with 8 seats and its been working ok but now that we've got more historical data we're realizing we need to search across all our past projects which i dont think is available in our current tier, can you tell me what plan level includes that feature and if theres any discount if we upgrade now instead of waiting til our renewal in march",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 145,
+    "subject": "PDF attachments not uploading to task comments since yesterday",
+    "body": "We have 12 seats on the Professional plan and since around 2pm yesterday afternoon none of our users can attach PDF files to task comments, we get an error that says \"file type not supported\" but PDFs are definitely listed as allowed file types in your documentation. Other file types seem to work fine, just PDFs are broken. Can you look into what's happening on your end?",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 146,
+    "subject": "Questions about billing when we switch to SSO",
+    "body": "Hi, we're planning to implement SAML/SSO for our org and I wanted to clarify how this affects our billing before we roll it out. Currently we have 23 seats on the monthly plan but with SSO enabled will we be charged per active user or does the seat model stay the same? Also our last invoice showed some overage charges from last month that I want to make sure don't happen again once we migrate everyone over. Can someone clarify the pricing model when we're using SSO authentication.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 147,
+    "subject": "CHARGED TWICE FOR 2FA SETUP - NEED MONEY BACK NOW",
+    "body": "We got hit with TWO separate charges this month for the same 10-seat subscription after I enabled 2-factor authentication on our account and honestly this is ridiculous, we only have one subscription not two, the invoice shows $490 charged on the 15th and then ANOTHER $490 on the 16th right after I turned on 2FA and I want that duplicate charge reversed immediately we're out nearly $500 because of your system glitch. This is unacceptable and I need this credited back to our card before end of business today, I don't understand how turning on basic security features triggered a double charge but it clearly did.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 148,
+    "subject": "Charged for search feature we can't even use - want my money back",
+    "body": "We've been paying for 12 seats at $49/month for the past 3 months and the search function literally doesn't work, like at all. We can't search tasks, we can't search projects, nothing comes up. Your sales guy said it was included but I'm looking at our invoices and we're basically paying for a broken feature that makes half our workflow impossible. This is ridiculous and I want a refund for at least the last billing cycle since we haven't been able to use what we're paying for. Fix this or credit our account immediately.",
+    "label": {
+      "team": "billing",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 149,
+    "subject": "File attachments not uploading to tasks since this morning",
+    "body": "Hi, we're on the Professional plan with 12 seats and since around 9am today none of our team members can attach files to tasks. We can drag and drop or click the attachment button but it just spins and then shows an error code 507. I've checked the documentation and it says attachments up to 2GB should work, our files are way smaller than that. This is breaking our workflow for today's deliverables so we need this fixed asap. We'd like a credit applied to this month's invoice ($588) for the downtime and lost productivity if this can't be resolved by end of business.",
+    "label": {
+      "team": "technical",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 150,
+    "subject": "Custom fields charging us for extra seats that don't exist",
+    "body": "Hi, we just noticed that our monthly invoice jumped from $1,176 to $2,058 this month and we only have 24 active users, so that would be like 42 seats being charged. Looking at the billing details it seems like every custom field we created is being counted as an additional seat or something? We created about 18 custom fields for our project templates and I'm wondering if that's the issue because our bill has been running for 3 days at the higher rate. Can you check what's happening with our October invoice before it finalizes?",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 151,
+    "subject": "Webhooks failing for past 6 hours - project updates not syncing to our external system",
+    "body": "Our webhook integration stopped working around 2pm UTC today and we can't push project status updates to our accounting software anymore, which is blocking our entire billing workflow. We have 12 seats and have been paying $588/month for almost a year now. We need this fixed immediately as our team is sitting idle waiting for manual workarounds. Can you also credit our account for today since the service isn't working as documented? The webhook endpoint is returning 502 errors when we test it but was fine yesterday.",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 152,
+    "subject": "Why am I being charged $2940 for renewal when I only have 5 users??",
+    "body": "This is ridiculous, we switched to your annual plan back in March and now you're trying to bill us for 10 seats but we NEVER added 10 people, it's always been 5 of us using this thing. Invoice #INV-847293 shows the overage charges and I need this fixed TODAY before the renewal goes through tomorrow or I'm canceling the whole subscription. Can someone from your team actually explain how this happened and show me how to adjust the seat count before the charges post?",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 153,
+    "subject": "Charge for seats we didn't use in October",
+    "body": "Hi, we got our invoice for October and I'm seeing charges for 15 seats but we only had 8 people actually using the tool that month, the other 7 were added by mistake during onboarding and we removed them on October 5th but you still charged us for the full month. Can you adjust the invoice or credit our account? We've attached a screenshot of our user list from Oct 5th showing only 8 active users, invoice #INV-45782.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 154,
+    "subject": "Slack integration keeps charging us $49/seat even after we removed the app",
+    "body": "We disabled the Slack integration last week from our workspace settings but we're still seeing charges for it on this month's invoice, we have 12 seats and it looks like we're being billed for the full integration even though nobody has access to it anymore. Can you check if this is a provisioning error on your end or if we need to do something else to stop the charges, this is duplicating our spend since we're paying for the base tool anyway.",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 155,
+    "subject": "Need to review who accessed our project files yesterday - audit log not showing anything",
+    "body": "Hi, we're trying to figure out how a confidential client proposal got shared externally yesterday and I need to check our audit log to see which user accounts accessed that specific project folder. When I go to the audit log section under workspace settings it's just showing a blank page, no entries at all. We have 12 seats on our plan so there should definitely be activity logged. Can you get that working so we can see the access history? This is pretty urgent since we need to know who saw what.",
+    "label": {
+      "team": "account",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 156,
+    "subject": "STOP charging me for notifications I never wanted",
+    "body": "We're being billed $49/seat/month for your tool but I'm absolutely furious because we're getting BOMBARDED with email notifications constantly and there's no way to turn them off globally - I've looked everywhere in settings and spent hours trying to figure this out. We've got 8 seats on our account and this is costing us nearly $400/month for a feature that's basically unusable as-is. I want a credit applied to our next invoice for at least last month since we couldn't even use the product properly, this is ridiculous and frankly feels like you're charging us for a broken system.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 157,
+    "subject": "We're being charged for 15 seats but only have 8 active users",
+    "body": "Hi, I noticed on our last invoice we're being charged for 15 seats at $49 each but we've only had 8 people actually using the tool since we scaled back the team last month. Can someone look at our account and adjust the billing to match what we're actually using? Our finance person says they deactivated the old user accounts but we're still seeing the charges. Thanks.",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 158,
+    "subject": "Need to upgrade seat count before renewal cycles in 3 days",
+    "body": "Hi, we're currently on the 5-seat plan and our annual renewal is coming up on the 15th. We just onboarded two new team members and they need access immediately but I can't add them to the existing plan, so right now they're blocked from accessing any projects and it's holding up our sprint. Can you let me know what the cost would be to add 2 more seats to our current plan before it renews? Also do you have any volume discounts if we go to 10 seats instead of 7, I want to get a quote before our renewal date hits.",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 159,
+    "subject": "Why is search so broken and what are you charging us for exactly??",
+    "body": "We've been on the Professional plan for 8 seats the last 3 months and the search functionality has been completely unusable - half my team can't find their tasks from last week, we're wasting hours every day scrolling through everything manually. Before I talk to my boss about this mess I need to know: are there other plan tiers that actually have working search or do I need to upgrade to Enterprise to get basic features that should already be included? Our invoice shows $1176/month and I'm not paying more for something that should work in the first place.",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 160,
+    "subject": "WHY WAS I CHARGED $5,880 WITHOUT WARNING??",
+    "body": "I just got hit with a massive charge on my card this morning and nobody told me this was coming. We're on the annual plan and apparently it auto-renewed but the amount is completely different from last year, I have 12 seats and last year it was way less per seat. Our accounting department is freaking out and I need to understand what changed and why nobody sent me a renewal notice before charging me, my CFO is breathing down my neck right now and I can't move forward with anything until we figure out what happened.",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 161,
+    "subject": "Question about our January invoice PDF",
+    "body": "Hi, we received our monthly invoice for January and I noticed it shows 12 seats at $49 each but we only have 8 people actually using the tool right now, I think our trial converted to a paid plan with the default seat count, can someone send me a breakdown of what we're actually being charged for and walk me through how to adjust our seat count down to match our actual headcount, thanks",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 162,
+    "subject": "Why am I being charged for 15 seats when we only use 5??",
+    "body": "This is ridiculous. I just looked at our invoice from last month and we're paying for 15 seats but literally only 4-5 people actually use this tool. Nobody told me we'd be billed for the full amount we provisioned and now I'm out almost $1000 for seats that are just sitting there doing nothing. How do I remove the extra seats and only pay for what we actually need going forward??",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 163,
+    "subject": "BROKEN INVOICE PDF - CANT OPEN OUR BILLING DOCUMENTS",
+    "body": "We've been trying to download and open our invoices from the past 3 months and every single PDF file is corrupted or won't open in Adobe, we've tried on two different computers and even our accounting dept can't get them to work which is completely unacceptable for a $49/seat tool especially when we're paying for 12 seats. This is clearly a bug in your system because the files error out immediately and we need working invoice PDFs for our records, frankly we shouldn't have to pay for something that's broken like this so we're expecting a credit on our next billing cycle at minimum.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 164,
+    "subject": "TIME TRACKER NOT RECORDING ANYTHING - COMPLETELY BROKEN - NEED CREDIT ASAP",
+    "body": "We've been paying for 12 seats at $49/month for 3 months now and your time tracking feature just stopped working entirely as of this morning around 9am EST. None of my team members can log any time entries, the button literally does nothing when clicked and we have a client deliverable due TODAY that we need to bill for. This is not a minor glitch, our entire billing process is frozen right now and I need either this fixed in the next hour or a credit applied to our account immediately because we're losing money every minute this is down. Check your documentation - it clearly says the time tracker \"records and logs all team activity in real-time\" so this is a straight up broken feature not user error.",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 165,
+    "subject": "Why am I being charged for 12 seats when we only need 5???",
+    "body": "This is ridiculous, we've been on the $49/seat plan for months now and nobody told us we could adjust our seat count, we're paying for 12 people but half of them don't even use the tool anymore and our finance team is asking me why our monthly bill keeps going up, I need to figure out how to scale this back down to like 5 or 6 seats because we're basically throwing money away right now and I don't even know if we're on the right plan for what we actually need",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 166,
+    "subject": "Invoice 45821 showing incorrect VAT calculation - affecting our billing reconciliation",
+    "body": "Hi, we received invoice 45821 for our 12 seats this month and the VAT amount doesn't match what we calculated based on your documented rate of 20% for UK businesses. We're an accounting firm so our finance team caught this immediately when reconciling against our purchase orders and now we can't close out our books for the month. The discrepancy is about £287 which is holding up our month-end audit, can you check the calculation on your end because either your system is computing it wrong or theres an error in how our tax ID is being processed.",
+    "label": {
+      "team": "technical",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 167,
+    "subject": "Question about seat count on our annual plan",
+    "body": "Hi, we're currently on the 20 seat annual plan and we need to add about 5 more people to our workspace, mostly to use the Jira sync feature since that's critical for our workflow. Before I go ahead and add them can you let me know if we need to upgrade our plan or if we can just add seats to what we already have? Also does adding mid-year affect our invoice total or do we just pay the pro-rata amount when we renew in June?",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 168,
+    "subject": "API key permissions not matching our seat tier",
+    "body": "Hi, we have 8 seats on our Pro plan at $49/seat and I just noticed our API key seems to have access to features that shouldn't be available at our permission level, we were charged for this month already but if the API access is being incorrectly provisioned we should get a credit for the overages we weren't supposed to have. Can you check what role/permissions are actually attached to our API credentials and let me know if we need to adjust something or if we should be refunded for this billing cycle.",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 169,
+    "subject": "SAML login stopped working this morning",
+    "body": "Our users can't log in via our Okta instance anymore, we've been using SAML for the past 6 months with no issues but starting around 9am EST today everyone just gets redirected back to the login page. We have 28 seats on the enterprise plan so this is blocking everyone from accessing their project work right now, I checked our Okta config and it looks the same as always so I'm not sure what changed on your end.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 170,
+    "subject": "Need to upgrade seats before month-end audit",
+    "body": "Hi, we just realized our current plan only has 8 seats but we've been adding contractors throughout November and we're at 12 active users right now. Our SOC 2 audit is happening next week and they're going to pull the audit log to verify seat compliance, so we need to get our licensing sorted immediately or we'll have a compliance issue. Can you tell me what the cost difference would be to upgrade to 12 seats mid-cycle and how quickly that takes effect? We're on the annual plan billed to acme-corp@company.com.",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 171,
+    "subject": "mobile app charges went through twice this month",
+    "body": "Hi, we got charged $1,470 on the 15th and then another $1,470 on the 16th for our 30-seat plan but we're only seeing one charge on our invoice portal and our accounting team is confused about why there's two transactions from you guys on our credit card statement, can you look into what happened with our subscription billing because we need to reconcile this before month end",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 172,
+    "subject": "Why is VAT being charged to my account when we're tax exempt",
+    "body": "We just got our January invoice and there's VAT added to our bill for 12 seats that shouldn't be there at all, we filled out the tax exemption form months ago and submitted it through the workspace settings but it's still showing up on every invoice since then. This is costing us hundreds extra and I can't process any payments until this is fixed because our accounting department won't approve it. Can someone actually look at our account and apply the exemption retroactively because right now we're completely blocked and I don't have time to chase this down.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 173,
+    "subject": "Custom fields keep disappearing from our templates - this is ridiculous",
+    "body": "We set up custom fields for our project templates last week and they were working fine, but now whenever we try to load a template it just shows the default fields and all our custom ones are gone. We have 12 seats and we've been using this tool for months but this is the first time something like this has broken. I've tried clearing the cache and logging back in but nothing fixes it. This wasn't in any update notice you sent us and its incredibly frustrating because we have to manually add these fields back every single time we create a project now.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 174,
+    "subject": "API returning 500 errors for our automated workflow - been broken for 2 days",
+    "body": "We've been getting constant 500 errors when trying to hit the /tasks endpoint through your API - our integration that syncs tasks from our CRM just completely stopped working and we have no idea why, the documentation says it should just work but we're getting something like \"Internal Server Error\" on every call we make, this is really frustrating because we pay for 12 seats and rely on this automation daily, can someone actually look at what's happening on your end because we haven't changed anything",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 175,
+    "subject": "CHARGED FOR CUSTOM FIELDS FEATURE WE NEVER USE - WANT MONEY BACK",
+    "body": "We've been paying for your \"premium custom fields\" add-on for 3 months now at like $15/seat which adds up to almost $900 with our 20 seats and it turns out this feature doesnt even work the way you described in the sales call, we havent used it once because the implementation is completely broken and your support team basically said \"sorry thats just how it works\" - this is unacceptable and I want a full refund for all 3 months of charges for this useless feature or im pulling everyone off your platform",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 176,
+    "subject": "need to add more seats to our current plan",
+    "body": "hi we're currently on the 10 seat plan and our team is growing faster than expected, we just hired 3 new people and they all need access starting next week. can you let me know how much it would be to upgrade to 15 seats and if there's any prorating since we're mid-cycle, our current invoice is #INV-47823 from last month",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 177,
+    "subject": "Why am I being charged for 15 seats when we only use 5??",
+    "body": "This is absolutely ridiculous, I just noticed our invoice from last month shows we're being billed for 15 seats but we only have 5 people actually using this thing, and now the Jira sync just started pulling in data for those phantom accounts which is inflating our usage metrics and making it impossible to track actual costs. We've been getting overcharged for months and I have no idea how long this has been going on. Fix this NOW before our next billing cycle hits or I'm escalating to finance.",
+    "label": {
+      "team": "billing",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 178,
+    "subject": "Charge for seat we removed last week",
+    "body": "Hi, we had 8 seats on our plan and removed one on the 15th but we're still being charged for 9 seats this month. I checked the audit log and can see the removal went through but the invoice still shows the full amount. Can you credit back the prorated amount for that extra seat or adjust our next invoice? We need this resolved today if possible but we can keep working in the meantime.",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 179,
+    "subject": "2FA setup not working for new team members",
+    "body": "Hi, we're trying to get our 15 new hires set up with two-factor authentication but when they go through the onboarding flow it keeps saying their authenticator app isn't synced properly, we've tried with both Google Authenticator and Microsoft Authenticator and it's the same issue for all of them so I'm wondering if there's a bug on your end or if we're doing something wrong. Can you take a look?",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 180,
+    "subject": "Sprint reports not generating - are we being charged for this feature",
+    "body": "We're unable to generate any sprint reports in our workspace and this is blocking our standup tomorrow morning, our team lead needs the velocity data to plan the next sprint. I noticed we're paying $49/seat for 12 seats so $588/month and I want to understand if this feature is included in our plan or if there's an additional charge we're missing, because if it's supposed to be included we need this fixed immediately. Can you check our account and let me know what's going on with the reporting module?",
+    "label": {
+      "team": "billing",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 181,
+    "subject": "SSO login completely broken - we cant access the platform",
+    "body": "Hi, our SAML SSO integration stopped working this morning around 9am EST and now none of our 12 users can log in through our identity provider, we've been locked out for almost 3 hours. We have a client presentation in 2 hours and need to pull project status reports but cant access anything. This is a critical blocker for us right now. We're on the $49/seat tier (invoice #INV-2024-8847) and honestly at this point I need to discuss getting a credit on this month's bill if we can't get this resolved within the next hour.",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 182,
+    "subject": "Invoice from last month has duplicate charge for user seats",
+    "body": "Hi, I was looking through our invoices and noticed we were billed for 15 seats in March but I only have 12 active users on our account, and then we got charged again for 15 seats mid-month which seems like an error. Can you review the attached invoice and credit us back for the overages, we should only be paying for 12 seats going forward. Thanks",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 183,
+    "subject": "VAT charge on our invoice for 12 seats",
+    "body": "Hi, we just got billed for our monthly plan with 12 seats and noticed there's VAT added on top of the base price per the invoice from last week. We're based in Germany and I need to understand if this is being applied correctly or if there's a way to adjust our billing since our company status might affect the tax treatment, can you clarify how this works on your end and if we need to provide any documentation",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 184,
+    "subject": "Guest access isnt working and we're paying for seats we cant even use",
+    "body": "We invited 3 external contractors as guests last week and they still can't access ANYTHING in our workspace, I've checked the permissions settings like 5 times and theyre all set to Editor but they keep getting locked out, this is ridiculous because we're paying $49/seat/month for 12 people and now we're basically wasting money on features that don't work, can you please fix this TODAY and credit us back for at least this month since honestly I'm about to recommend we switch to Asana if this isnt resolved by end of business, what's going on with your guest access feature??",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": true,
+      "angry": true
+    }
+  },
+  {
+    "id": 185,
+    "subject": "search results not showing completed tasks from last month",
+    "body": "hi, we've got 12 seats on the plan and I noticed that when I search for tasks with the \"completed\" filter, nothing from before May 15th is showing up even though I can see those tasks when I browse the project directly. The search docs say it should return all completed tasks regardless of date so something's definitely broken there. Can you take a look at why the search isn't indexing older completed tasks properly? Not urgent since we can work around it for now but would be good to get fixed when you have time.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 186,
+    "subject": "Annual renewal payment failing - can't access workspace since this morning",
+    "body": "We renewed our annual plan for 12 seats this morning but the payment processor keeps returning an error code 402 when we try to complete checkout, and now our entire workspace is locked with a 'billing setup incomplete' banner blocking task creation. I've tried multiple cards and browsers, even cleared cache, nothing works. Our team has been unable to do any work for the past 3 hours and I need this resolved ASAP - can you check if there's an issue on your end with annual renewals or if this is something on our account?",
+    "label": {
+      "team": "technical",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 187,
+    "subject": "Billing question about unused seat licenses",
+    "body": "Hi, we currently have 12 seats allocated on our plan at $49/seat but only 6 people actually use the platform and honestly we're not even using the Gantt view feature so I'm wondering if we can scale back to 8 seats and get a credit for the overage we've been paying the last two months? We're not in any rush to fix this but wanted to see if that's possible.",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": true,
+      "angry": false
+    }
+  },
+  {
+    "id": 188,
+    "subject": "Need to know if we can add more seats for the Gantt view feature",
+    "body": "Hi, we're currently on the 10-seat plan and we've been using the Gantt view pretty heavily for our projects but were wondering if there's a better plan tier that gives us more seats since we're looking to onboard a few more people to our account, or do I need to just buy 5 more seats separately and get upgraded to the 15-seat option?",
+    "label": {
+      "team": "sales",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 189,
+    "subject": "need to remove team member from workspace but keep their project history",
+    "body": "hi we have a contractor who just finished up on our Q1 roadmap project and we need to pull him off the kanban board view but HR is saying we should probably keep his cards and comments visible for audit purposes, also we're not sure if removing him from the workspace means he loses access to everything or just that project, we're on the 12 seat plan so want to make sure we're not wasting a license seat if hes not actively using it anymore, can you walk us through the permission settings for this",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 190,
+    "subject": "API usage charges not matching our call logs",
+    "body": "Hi, we're trying to reconcile our January invoice against the API call metrics in our dashboard and there's a pretty big discrepancy - we show about 47k calls but got charged for 52k, which is an extra $85 or so on our bill. Can you help us understand where the difference is coming from? We have 12 seats on the plan so wanted to make sure we're not being double-charged or something.",
+    "label": {
+      "team": "billing",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 191,
+    "subject": "Search function completely broken - can't find any tasks",
+    "body": "We've been using your platform for 3 months now and the search feature has been completely useless for the past 2 days. I'm trying to find tasks assigned to john.smith@company.com from last month but it just returns nothing even though I can see them when I scroll through manually. This is frustrating because it defeats the whole purpose of having a search if it doesn't work, we have 12 seats on the $49 plan and this is making it impossible for my team to actually use the product efficiently like we're paying for.",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 192,
+    "subject": "Question about our billing cycle and seat usage",
+    "body": "Hi, we're currently on the 15-seat plan at $49/seat but I'm trying to understand how our monthly billing works - do we get charged on the same day each month or does it depend on when we added people? We've been growing and I think we might need to upgrade to 20 seats soon but want to make sure I understand the billing before making changes, can someone walk me through this?",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 193,
+    "subject": "Unable to enable time tracking for new user roles",
+    "body": "We just onboarded 3 new team members this morning and assigned them to a custom role we created, but none of them can see the time tracking feature even though our admin account has it enabled. I've checked the permissions in workspace settings and the role seems to have everything selected, but time tracking is still grayed out for them. We need them tracking hours today for client billing so this is holding up our workflow right now.",
+    "label": {
+      "team": "account",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 194,
+    "subject": "does csv export come with our current plan or do we need to upgrade",
+    "body": "Hi, we're currently on the 10-seat starter plan and I'm trying to export our project data to CSV but I don't see the option anywhere in the interface, only PDF which isn't what we need for our data analysis. I checked the pricing page and it looks like CSV export might be a pro feature? Can you clarify what's included with our plan and if we'd need to upgrade to access it, we have about 15 people who might need this eventually so I'm trying to figure out the cost impact",
+    "label": {
+      "team": "sales",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 195,
+    "subject": "VAT showing on latest invoice but we're exempt",
+    "body": "Hi, we just received the invoice for our 12 seats for this month (inv-47392) and there's VAT being charged that shouldn't be there, we have a valid EU exemption certificate on file but I'm not sure if it's still linked to our workspace account properly. Can you check our account settings and update the VAT registration details? We need to get this sorted before month end for our accounting.",
+    "label": {
+      "team": "account",
+      "urgency": 1,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 196,
+    "subject": "Files keep disappearing when I switch workspaces - my team lost a week of documentation",
+    "body": "This is absolutely ridiculous. I have 12 seats and every time someone switches between our client workspace and the internal workspace all the attachments they uploaded just vanish, they're not in trash, not in history, nothing. I checked with 3 different people and it's happening to everyone. How is this even possible with a $49/seat tool, we're paying almost 600 a month for this to work and now people are refusing to upload anything because they think it's going to disappear. Can someone actually look into this or tell me if it's a permissions issue on my end because our admin has full access to everything.",
+    "label": {
+      "team": "account",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 197,
+    "subject": "Email notifications stopped coming through for task assignments",
+    "body": "We noticed starting yesterday around 2pm that none of our users are receiving email notifications when tasks are assigned to them, the notifications still show as sent in the audit log but nobody's inboxes are getting them. We have 12 seats and this has been working fine for the past 3 months. I checked our email settings and they're the same as always, using our company domain with SMTP. Could you look into what might be blocking these on your end?",
+    "label": {
+      "team": "technical",
+      "urgency": 0,
+      "refund_requested": false,
+      "angry": false
+    }
+  },
+  {
+    "id": 198,
+    "subject": "WHY IS SEARCH NOT WORKING - we're paying for 12 seats and cant find our Q3 deliverables",
+    "body": "This is ridiculous, our whole team has been searching for the project milestone document for the past hour and nothing shows up in search, we have like 2000+ tasks and files and the search feature is completely broken or something, we're losing billable hours right now and i need to know if theres a premium tier or paid add-on that actually has working search because clearly the $49/seat plan isnt cutting it, invoice #INV-47382 from last month, do we need to upgrade to your enterprise plan to get search that actually works",
+    "label": {
+      "team": "sales",
+      "urgency": 3,
+      "refund_requested": false,
+      "angry": true
+    }
+  },
+  {
+    "id": 199,
+    "subject": "need to add 3 more seats before our client presentation tomorrow",
+    "body": "hi we're trying to upload the final project files to share with our client but we're hitting the attachment storage limit on our current plan and we can't get anyone to review the docs, can we upgrade to the pro plan today to get more storage? we have 7 people on the team right now and need 10 seats total, how much would that be and can you get us set up immediately?",
+    "label": {
+      "team": "sales",
+      "urgency": 2,
+      "refund_requested": false,
+      "angry": false
+    }
+  }
+]

@@ -28,7 +28,14 @@ const money = (n: number) => `$${n.toFixed(4)}`;
 const pct = (n: number) => `${(n * 100).toFixed(1)}%`;
 const secs = (ms: number) => `${(ms / 1000).toFixed(1)} s`;
 const fieldNames = ["Team", "Urgency", "Refund requested", "Angry"];
-const tabs = ["race", "accuracy", "questions", "tickets", "wire", "method"];
+const tabs = [
+  "overview",
+  "agreement",
+  "tasks",
+  "dataset",
+  "requests",
+  "methodology",
+];
 
 export default function App() {
   const [run, setRun] = useState<Run | null>(null);
@@ -148,7 +155,7 @@ export default function App() {
 
         <main id="results">
           <Tabs
-            defaultValue={tabs.includes(tab) ? tab : "race"}
+            defaultValue={tabs.includes(tab) ? tab : "overview"}
             onValueChange={(v) => {
               const u = new URL(location.href);
               u.searchParams.set("tab", v);
@@ -157,16 +164,16 @@ export default function App() {
           >
             <div className="mb-2 overflow-x-auto border-b pb-1">
               <TabsList variant="line" aria-label="Report sections">
-                <TabsTrigger value="race">Overview</TabsTrigger>
-                <TabsTrigger value="accuracy">Agreement</TabsTrigger>
-                <TabsTrigger value="questions">Task definitions</TabsTrigger>
-                <TabsTrigger value="tickets">Dataset</TabsTrigger>
-                <TabsTrigger value="wire">API requests</TabsTrigger>
-                <TabsTrigger value="method">Methodology</TabsTrigger>
+                <TabsTrigger value="overview">Overview</TabsTrigger>
+                <TabsTrigger value="agreement">Agreement</TabsTrigger>
+                <TabsTrigger value="tasks">Task definitions</TabsTrigger>
+                <TabsTrigger value="dataset">Dataset</TabsTrigger>
+                <TabsTrigger value="requests">API requests</TabsTrigger>
+                <TabsTrigger value="methodology">Methodology</TabsTrigger>
               </TabsList>
             </div>
 
-            <TabsContent value="race" className="space-y-5">
+            <TabsContent value="overview" className="space-y-5">
               <Card className="report-panel">
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <ChartHeading title="Completed requests over time">
@@ -245,7 +252,7 @@ export default function App() {
               </p>
             </TabsContent>
 
-            <TabsContent value="accuracy" className="space-y-5">
+            <TabsContent value="agreement" className="space-y-5">
               <Card className="report-panel">
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <ChartHeading title="Agreement by question">
@@ -338,16 +345,16 @@ export default function App() {
                 <AgreementChart run={run} />
               </Card>
             </TabsContent>
-            <TabsContent value="questions">
+            <TabsContent value="tasks">
               {run.questions && <Questions questions={run.questions} />}
             </TabsContent>
-            <TabsContent value="tickets" className="space-y-4">
+            <TabsContent value="dataset" className="space-y-4">
               <Dataset run={run} />
             </TabsContent>
-            <TabsContent value="wire">
+            <TabsContent value="requests">
               {run.requests && <Requests requests={run.requests} />}
             </TabsContent>
-            <TabsContent value="method">
+            <TabsContent value="methodology">
               <Method run={run} />
             </TabsContent>
           </Tabs>

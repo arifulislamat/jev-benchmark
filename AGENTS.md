@@ -131,7 +131,7 @@ All four models score 72 to 78 on team and 45 to 48 on urgency against the label
 - Never echo or search the API key file. It is gitignored and stays that way. Some tooling refuses a shell command that merely mentions it alongside a search command, so edit it in place rather than reading it back.
 - No Playwright or chromium-cli installed. Screenshots use `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --headless --screenshot`. Playwright browsers do exist in `~/Library/Caches/ms-playwright` if you ever need them.
 - `vite preview` binds to `[::1]`, so `curl 127.0.0.1:4173` fails while `localhost:4173` works.
-- `?done=1` jumps to the finished state and `?tab=<name>` opens a tab, both added so headless screenshots can reach any state without clicking.
+- The page loads in the finished state, so `?done=1` is gone. `?tab=<name>` still opens a tab, which is how headless screenshots reach any section without clicking.
 - lucide-react 1.47 has no brand icons. The GitHub mark is inlined SVG in `App.tsx`.
 - shadcn 4.x init flags changed: `pnpm dlx shadcn@latest init -b radix -t vite -p nova --no-monorepo --yes`. `-b` is the component library now, not the base color.
 - `baseUrl` in tsconfig is deprecated in TS 7 and fails the build. `paths` works without it.
@@ -153,8 +153,7 @@ All four models score 72 to 78 on team and 45 to 48 on urgency against the label
 
 ## Open items
 
-- An accuracy toggle between consensus grading and label grading would let the page make the methodology argument instead of prose doing it.
 - Latency needs repeat runs and a median. It moved by several seconds between runs and the current figure is a single sample. Cost is deterministic, latency is not.
 - A batched-LLM lane, 20 tickets per call, is the strongest untested objection to the current setup. It is also where JSON mode visibly breaks, as the dataset generation already showed.
 - No dark mode. The chart palette is validated for it, but nothing switches yet.
-- ECharts pushes the bundle to 887KB, 293KB gzipped.
+- ECharts pushes the bundle to 957KB, 317KB gzipped.

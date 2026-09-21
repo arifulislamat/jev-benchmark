@@ -85,12 +85,12 @@ Lane caches are keyed `phase-<label>-<N>.json`. Rebuilding `run.json` from cache
 
 | | Jev | Sonnet 5 | GPT-5.6 Sol | Gemini 3.8 Flash |
 |---|---|---|---|---|
-| cost | $0.0031 | $0.1990 | $0.1107 | $0.0896 |
-| wall | 6.9s | 18.0s | 18.4s | 46.3s |
-| p50 | 560ms | 2677ms | 2349ms | 3940ms |
+| cost | $0.0031 | $0.1990 | $0.1117 | $0.0960 |
+| wall | 8.0s | 18.0s | 23.1s | 66.8s |
+| p50 | 474ms | 2479ms | 1937ms | 3459ms |
 | failures | 0 | 0 | 0 | 0 |
 
-Cheapest text model is 29x Jev's cost, most expensive 64x.
+Cheapest text model is 31x Jev's cost, most expensive 65x.
 
 ## Methodology decisions, and why
 
@@ -104,11 +104,11 @@ This metric measures conformity, not truth. A model that is right when the other
 
 ```
                 team   urgency   refund   angry
-consensus Jev   94.0%    77.0%    99.0%   90.0%
-spec      Jev   75.0%    48.0%    98.0%   94.0%
+consensus Jev   93.0%    72.0%    99.0%   89.0%
+spec      Jev   76.0%    48.0%    98.0%   94.0%
 ```
 
-All four models score 72 to 78 on team and 45 to 48 on urgency against the labels, but 88 to 96 and 68 to 86 against each other, while refund and angry barely move. Four independent models failing the same way on exactly two of four questions is evidence the labels are wrong, not the models. It is the clearest evidence in the project that the ground truth was the problem.
+All four models score 72 to 78 on team and 46 to 48 on urgency against the labels, but 88 to 94 and 70 to 82 against each other, while refund and angry barely move. Four independent models failing the same way on exactly two of four questions is evidence the labels are wrong, not the models. It is the clearest evidence in the project that the ground truth was the problem.
 
 **Judges are opt-in.** An earlier version used GPT-6 Astra and Opus 5 as graders. They cost more than the race they graded and blew the key limit. Do not add frontier models without asking first.
 
@@ -153,7 +153,8 @@ All four models score 72 to 78 on team and 45 to 48 on urgency against the label
 
 ## Open items
 
-- Latency needs repeat runs and a median. It moved by several seconds between runs and the current figure is a single sample. Cost is deterministic, latency is not.
+- Latency needs repeat runs and a median. It moved by several seconds between runs and the current figure is a single sample.
+- Cost is not quite deterministic either. Across two runs of the same 100 tickets, Jev and Sonnet repeated to the cent, while GPT moved $0.1107 to $0.1117 and Gemini $0.0896 to $0.0960. The input side is fixed; reasoning tokens are not. Say "recorded" rather than "deterministic" when describing the cost figures.
 - A batched-LLM lane, 20 tickets per call, is the strongest untested objection to the current setup. It is also where JSON mode visibly breaks, as the dataset generation already showed.
 - No dark mode. The chart palette is validated for it, but nothing switches yet.
 - ECharts pushes the bundle to 957KB, 317KB gzipped.

@@ -13,17 +13,17 @@ The three text models are the workhorse tier from each lab, not the flagship and
 
 | | Jev | Sonnet 5 | GPT-5.6 Sol | Gemini 3.8 Flash |
 |---|---|---|---|---|
-| Total cost | **$0.0031** | $0.1990 | $0.1107 | $0.0896 |
-| Per million tickets | **$31** | $1,990 | $1,107 | $896 |
-| Wall clock | **6.9s** | 18.0s | 18.4s | 46.3s |
-| Median latency | **560ms** | 2677ms | 2349ms | 3940ms |
+| Total cost | **$0.0031** | $0.1990 | $0.1117 | $0.0960 |
+| Per million tickets | **$31** | $1,990 | $1,117 | $960 |
+| Wall clock | **8.0s** | 18.0s | 23.1s | 66.8s |
+| Median latency | **474ms** | 2479ms | 1937ms | 3459ms |
 | Failed to parse | 0 | 0 | 0 | 0 |
 
-The cheapest text model costs **29x** what Jev costs. The most expensive costs 64x.
+The cheapest text model costs **31x** what Jev costs. The most expensive costs 65x.
 
-Accuracy is close. Graded leave-one-out, so each model is scored against the majority answer of the other three, Jev lands within a few points everywhere: 94% on routing against 88 to 96 for the others, 99% on refund detection, 90% on sentiment. It trails on urgency, which is the question the models disagree about most among themselves.
+Accuracy is close. Graded leave-one-out, so each model is scored against the majority answer of the other three, Jev lands within a few points everywhere: 93% on routing against 88 to 94 for the others, 99% on refund detection, 89% on sentiment. It sits mid-pack on urgency, which is the question the models disagree about most among themselves.
 
-The number worth staring at is the agreement matrix. The three text models give identical answers to each other on 56 to 72 percent of tickets. They are not converging on one right answer, so "accuracy" here means agreement with a rough consensus and nothing stronger.
+The number worth staring at is the agreement matrix. The three text models give identical answers to each other on 60 to 72 percent of tickets. They are not converging on one right answer, so "accuracy" here means agreement with a rough consensus and nothing stronger.
 
 ## Layout
 
@@ -75,7 +75,7 @@ Every text lane runs with a strict JSON schema, `max_tokens: 1500`, and low reas
 
 ## Known limits
 
-- One run on one laptop. Latency includes the network round trip and varies by seconds between runs. Cost is deterministic, latency is not.
+- One run on one laptop. Latency includes the network round trip and varies by seconds between runs. Cost is steadier but not fixed: the input side repeats exactly, while reasoning tokens move the total by a few percent on the models that use them.
 - Synthetic tickets are cleaner than real ones.
 - Prompt caching would not help the text lanes here. The static prefix is roughly 500 tokens, below the minimum cacheable prefix.
 - An earlier run capped output at 200 tokens, which truncated the reasoning models mid-thought and produced 88 parse failures that looked exactly like a model defect. They were a configuration defect. If you swap models, check `finish_reason` before believing a failure rate.

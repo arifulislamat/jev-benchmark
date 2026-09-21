@@ -118,7 +118,26 @@ export function RaceChart({ run, elapsed }: { run: Run; elapsed: number }) {
       ...base,
       grid: { ...base.grid, top: 40 },
       legend: { show: false },
-      tooltip: { ...base.tooltip, trigger: "axis" },
+      tooltip: {
+        ...base.tooltip,
+        trigger: "axis",
+        // Both halves of the default axis tooltip are bare numbers: elapsed
+        // seconds in the header, a completion count in the row.
+        formatter: (
+          params: {
+            marker: string;
+            seriesName: string;
+            value: [number, number];
+          }[],
+        ) =>
+          [
+            `${params[0].value[0].toFixed(2)} s elapsed`,
+            ...params.map(
+              (p) =>
+                `${p.marker} ${p.seriesName}: <strong>${p.value[1]} of ${run.dataset.n} answered</strong>`,
+            ),
+          ].join("<br/>"),
+      },
       xAxis: {
         type: "value",
         min: 0,

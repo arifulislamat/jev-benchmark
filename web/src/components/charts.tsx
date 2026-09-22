@@ -186,7 +186,10 @@ export function RaceChart({ run, elapsed }: { run: Run; elapsed: number }) {
                 ],
               },
             },
-            emphasis: { focus: "series", lineStyle: { width: 3.5 } },
+            // Axis tooltip highlights the lines but not the silent head
+            // markers, so focus:"series" blurred the heads on every pointer
+            // move and they flickered. Nothing here needs a hover state.
+            emphasis: { disabled: true },
             // Rounded steps retain the recorded completion counts without interpolation.
             data: [[0, 0], ...visible.map((p) => [p.t / 1000, p.n])],
             z: 5,
